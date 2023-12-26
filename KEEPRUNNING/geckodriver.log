@@ -1,0 +1,595 @@
+1688648213705	geckodriver	INFO	Listening on 127.0.0.1:45083
+1688648214247	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "42999" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCqrKle"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688648215227	Marionette	INFO	Marionette enabled
+1688648215233	Marionette	INFO	Listening on port 46349
+WebDriver BiDi listening on ws://localhost:42999
+Read port: 46349
+1688648215390	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCqrKle/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:42999/devtools/browser/c5d4428a-c053-4fb3-88e2-c58c39538735
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688648229456	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1688648279652	geckodriver	INFO	Listening on 127.0.0.1:48011
+1688648280186	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "48671" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileocDKpD"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688648281007	Marionette	INFO	Marionette enabled
+1688648281011	Marionette	INFO	Listening on port 35645
+WebDriver BiDi listening on ws://localhost:48671
+Read port: 35645
+1688648281275	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileocDKpD/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:48671/devtools/browser/5c16ee1b-47d7-444b-934f-b6056e848efc
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688648294447	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1688648424680	geckodriver	INFO	Listening on 127.0.0.1:56195
+1688648425216	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "60045" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilectBKu5"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688648426030	Marionette	INFO	Marionette enabled
+1688648426035	Marionette	INFO	Listening on port 38739
+WebDriver BiDi listening on ws://localhost:60045
+Read port: 38739
+1688648426313	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilectBKu5/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:60045/devtools/browser/79d093c6-1778-4981-ab98-49a0550174a9
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688648438710	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1688648466625	geckodriver	INFO	Listening on 127.0.0.1:52251
+1688648466661	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "34639" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSiumZG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688648467488	Marionette	INFO	Marionette enabled
+1688648467492	Marionette	INFO	Listening on port 41765
+WebDriver BiDi listening on ws://localhost:34639
+Read port: 41765
+1688648467670	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSiumZG/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:34639/devtools/browser/3451c079-50f5-4272-a051-e31aa723afc8
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3ioMo4/yO/l/makehaste_jhash/LO65JMA1ibHCrVqcdVcHVLC1zKriLNM8mYQbZuUM4pIu1L7lF3lzBVDgrGOof_5Fw4BDWf1k_oEKE0ZHapzxMKn8bhcVVqribgoOj0lHVj9LCHwIWH7hMO3gLrTP1VxMerUYYOAnxe2bHT3mJ5n4I7_ibVW2KxM4tWpUH.js?_nc_x=-0u__v2uwok, line 497: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3ioMo4/yO/l/makehaste_jhash/LO65JMA1ibHCrVqcdVcHVLC1zKriLNM8mYQbZuUM4pIu1L7lF3lzBVDgrGOof_5Fw4BDWf1k_oEKE0ZHapzxMKn8bhcVVqribgoOj0lHVj9LCHwIWH7hMO3gLrTP1VxMerUYYOAnxe2bHT3mJ5n4I7_ibVW2KxM4tWpUH.js?_nc_x=-0u__v2uwok, line 497: Error: Minified React error #422; visit https://reactjs.org/docs/error-decoder.html?invariant=422 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688648481975	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1688648582939	geckodriver	INFO	Listening on 127.0.0.1:49411
+1688648582973	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "33225" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewrenoV"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688648583856	Marionette	INFO	Marionette enabled
+1688648583860	Marionette	INFO	Listening on port 36473
+WebDriver BiDi listening on ws://localhost:33225
+Read port: 36473
+1688648584048	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewrenoV/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:33225/devtools/browser/1f66a51f-2d8a-43bc-ac80-19a626aab473
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688648596455	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+1688648985190	geckodriver	INFO	Listening on 127.0.0.1:38881
+1688648985736	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "59043" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledf3X2U"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688648986656	Marionette	INFO	Marionette enabled
+1688648986660	Marionette	INFO	Listening on port 39191
+WebDriver BiDi listening on ws://localhost:59043
+Read port: 39191
+1688648986896	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledf3X2U/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:59043/devtools/browser/1a927c62-7ed8-4b2e-a751-4fd116230f90
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3ioMo4/yO/l/makehaste_jhash/LO65JMA1ibHCrVqcdVcHVLC1zKriLNM8mYQbZuUM4pIu1L7lF3lzBVDgrGOof_5Fw4BDWf1k_oEKE0ZHapzxMKn8bhcVVqribgoOj0lHVj9LCHwIWH7hMO3gLrTP1VxMerUYYOAnxe2bHT3mJ5n4I7_ibVW2KxM4tWpUH.js?_nc_x=-0u__v2uwok, line 497: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3ioMo4/yO/l/makehaste_jhash/LO65JMA1ibHCrVqcdVcHVLC1zKriLNM8mYQbZuUM4pIu1L7lF3lzBVDgrGOof_5Fw4BDWf1k_oEKE0ZHapzxMKn8bhcVVqribgoOj0lHVj9LCHwIWH7hMO3gLrTP1VxMerUYYOAnxe2bHT3mJ5n4I7_ibVW2KxM4tWpUH.js?_nc_x=-0u__v2uwok, line 497: Error: Minified React error #422; visit https://reactjs.org/docs/error-decoder.html?invariant=422 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688649000937	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1688649545693	geckodriver	INFO	Listening on 127.0.0.1:46029
+1688649545729	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "44641" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledJa2aj"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688649546758	Marionette	INFO	Marionette enabled
+1688649546764	Marionette	INFO	Listening on port 41831
+WebDriver BiDi listening on ws://localhost:44641
+Read port: 41831
+1688649546905	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledJa2aj/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:44641/devtools/browser/2fb258c7-3a6b-4c85-90d9-0cc5ec9884ba
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3ioMo4/yO/l/makehaste_jhash/LO65JMA1ibHCrVqcdVcHVLC1zKriLNM8mYQbZuUM4pIu1L7lF3lzBVDgrGOof_5Fw4BDWf1k_oEKE0ZHapzxMKn8bhcVVqribgoOj0lHVj9LCHwIWH7hMO3gLrTP1VxMerUYYOAnxe2bHT3mJ5n4I7_ibVW2KxM4tWpUH.js?_nc_x=-0u__v2uwok, line 497: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3ioMo4/yO/l/makehaste_jhash/LO65JMA1ibHCrVqcdVcHVLC1zKriLNM8mYQbZuUM4pIu1L7lF3lzBVDgrGOof_5Fw4BDWf1k_oEKE0ZHapzxMKn8bhcVVqribgoOj0lHVj9LCHwIWH7hMO3gLrTP1VxMerUYYOAnxe2bHT3mJ5n4I7_ibVW2KxM4tWpUH.js?_nc_x=-0u__v2uwok, line 497: Error: Minified React error #422; visit https://reactjs.org/docs/error-decoder.html?invariant=422 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688649560745	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iPpi4/yv/l/makehaste_jhash/Gdn1PwX7gBwKolOcqcqVuZ6tRVTkCpIXVaIBsK2R7qzFWGEm1sVrBL2x15IRYTMSsFBs1_LEFgmtWo-VCugTNuYB2_k9cj7UJVz7w7ua2o9wxHvytmj5gO7fRMilU-GjHLX-Go-tYDe2p0QRmIftsE1VTVpXuEyZb4peA7m--dZF9xrAMKg6mM04ajmSFcbdFtUmqZoaBk8rCh376Vtb1U-0mDtOhsykN4r3OWwP9pePArEGyYYOAnxe2bHT3b8ERArSeVUU.js?_nc_x=-0u__v2uwok, line 1154: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iPpi4/yv/l/makehaste_jhash/Gdn1PwX7gBwKolOcqcqVuZ6tRVTkCpIXVaIBsK2R7qzFWGEm1sVrBL2x15IRYTMSsFBs1_LEFgmtWo-VCugTNuYB2_k9cj7UJVz7w7ua2o9wxHvytmj5gO7fRMilU-GjHLX-Go-tYDe2p0QRmIftsE1VTVpXuEyZb4peA7m--dZF9xrAMKg6mM04ajmSFcbdFtUmqZoaBk8rCh376Vtb1U-0mDtOhsykN4r3OWwP9pePArEGyYYOAnxe2bHT3b8ERArSeVUU.js?_nc_x=-0u__v2uwok, line 1154: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iPpi4/yv/l/makehaste_jhash/Gdn1PwX7gBwKolOcqcqVuZ6tRVTkCpIXVaIBsK2R7qzFWGEm1sVrBL2x15IRYTMSsFBs1_LEFgmtWo-VCugTNuYB2_k9cj7UJVz7w7ua2o9wxHvytmj5gO7fRMilU-GjHLX-Go-tYDe2p0QRmIftsE1VTVpXuEyZb4peA7m--dZF9xrAMKg6mM04ajmSFcbdFtUmqZoaBk8rCh376Vtb1U-0mDtOhsykN4r3OWwP9pePArEGyYYOAnxe2bHT3b8ERArSeVUU.js?_nc_x=-0u__v2uwok, line 1154: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iPpi4/yv/l/makehaste_jhash/Gdn1PwX7gBwKolOcqcqVuZ6tRVTkCpIXVaIBsK2R7qzFWGEm1sVrBL2x15IRYTMSsFBs1_LEFgmtWo-VCugTNuYB2_k9cj7UJVz7w7ua2o9wxHvytmj5gO7fRMilU-GjHLX-Go-tYDe2p0QRmIftsE1VTVpXuEyZb4peA7m--dZF9xrAMKg6mM04ajmSFcbdFtUmqZoaBk8rCh376Vtb1U-0mDtOhsykN4r3OWwP9pePArEGyYYOAnxe2bHT3b8ERArSeVUU.js?_nc_x=-0u__v2uwok, line 1154: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iPpi4/yv/l/makehaste_jhash/Gdn1PwX7gBwKolOcqcqVuZ6tRVTkCpIXVaIBsK2R7qzFWGEm1sVrBL2x15IRYTMSsFBs1_LEFgmtWo-VCugTNuYB2_k9cj7UJVz7w7ua2o9wxHvytmj5gO7fRMilU-GjHLX-Go-tYDe2p0QRmIftsE1VTVpXuEyZb4peA7m--dZF9xrAMKg6mM04ajmSFcbdFtUmqZoaBk8rCh376Vtb1U-0mDtOhsykN4r3OWwP9pePArEGyYYOAnxe2bHT3b8ERArSeVUU.js?_nc_x=-0u__v2uwok, line 1154: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iPpi4/yv/l/makehaste_jhash/Gdn1PwX7gBwKolOcqcqVuZ6tRVTkCpIXVaIBsK2R7qzFWGEm1sVrBL2x15IRYTMSsFBs1_LEFgmtWo-VCugTNuYB2_k9cj7UJVz7w7ua2o9wxHvytmj5gO7fRMilU-GjHLX-Go-tYDe2p0QRmIftsE1VTVpXuEyZb4peA7m--dZF9xrAMKg6mM04ajmSFcbdFtUmqZoaBk8rCh376Vtb1U-0mDtOhsykN4r3OWwP9pePArEGyYYOAnxe2bHT3b8ERArSeVUU.js?_nc_x=-0u__v2uwok, line 1154: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1688649735482	Marionette	INFO	Stopped listening on port 41831
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1688649737746	Marionette	INFO	Stopped listening on port 36473
+1688649739282	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1688649740537	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1688649807649	geckodriver	INFO	Listening on 127.0.0.1:36303
+1688649808198	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "44433" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilev9Y7Eo"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688649809070	Marionette	INFO	Marionette enabled
+1688649809075	Marionette	INFO	Listening on port 40749
+WebDriver BiDi listening on ws://localhost:44433
+Read port: 40749
+1688649809223	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilev9Y7Eo/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:44433/devtools/browser/ce592a60-dd2b-4221-8f27-243bf8c29329
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3ioMo4/yO/l/makehaste_jhash/LO65JMA1ibHCrVqcdVcHVLC1zKriLNM8mYQbZuUM4pIu1L7lF3lzBVDgrGOof_5Fw4BDWf1k_oEKE0ZHapzxMKn8bhcVVqribgoOj0lHVj9LCHwIWH7hMO3gLrTP1VxMerUYYOAnxe2bHT3mJ5n4I7_ibVW2KxM4tWpUH.js?_nc_x=-0u__v2uwok, line 497: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3ioMo4/yO/l/makehaste_jhash/LO65JMA1ibHCrVqcdVcHVLC1zKriLNM8mYQbZuUM4pIu1L7lF3lzBVDgrGOof_5Fw4BDWf1k_oEKE0ZHapzxMKn8bhcVVqribgoOj0lHVj9LCHwIWH7hMO3gLrTP1VxMerUYYOAnxe2bHT3mJ5n4I7_ibVW2KxM4tWpUH.js?_nc_x=-0u__v2uwok, line 497: Error: Minified React error #422; visit https://reactjs.org/docs/error-decoder.html?invariant=422 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688649821906	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iPpi4/yv/l/makehaste_jhash/Gdn1PwX7gBwKolOcqcqVuZ6tRVTkCpIXVaIBsK2R7qzFWGEm1sVrBL2x15IRYTMSsFBs1_LEFgmtWo-VCugTNuYB2_k9cj7UJVz7w7ua2o9wxHvytmj5gO7fRMilU-GjHLX-Go-tYDe2p0QRmIftsE1VTVpXuEyZb4peA7m--dZF9xrAMKg6mM04ajmSFcbdFtUmqZoaBk8rCh376Vtb1U-0mDtOhsykN4r3OWwP9pePArEGyYYOAnxe2bHT3b8ERArSeVUU.js?_nc_x=-0u__v2uwok, line 1154: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iPpi4/yv/l/makehaste_jhash/Gdn1PwX7gBwKolOcqcqVuZ6tRVTkCpIXVaIBsK2R7qzFWGEm1sVrBL2x15IRYTMSsFBs1_LEFgmtWo-VCugTNuYB2_k9cj7UJVz7w7ua2o9wxHvytmj5gO7fRMilU-GjHLX-Go-tYDe2p0QRmIftsE1VTVpXuEyZb4peA7m--dZF9xrAMKg6mM04ajmSFcbdFtUmqZoaBk8rCh376Vtb1U-0mDtOhsykN4r3OWwP9pePArEGyYYOAnxe2bHT3b8ERArSeVUU.js?_nc_x=-0u__v2uwok, line 1154: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1688650425131	geckodriver	INFO	Listening on 127.0.0.1:43131
+1688650425165	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "43577" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekn9nv4"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1688650425969	Marionette	INFO	Marionette enabled
+1688650425973	Marionette	INFO	Listening on port 40159
+WebDriver BiDi listening on ws://localhost:43577
+Read port: 40159
+1688650426232	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekn9nv4/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:43577/devtools/browser/e631022e-9188-490b-9966-784af10efe17
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yU/l/nl_NL/boFRcJH3lCt.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i7_T4/ym/l/makehaste_jhash/wQH46MDUFxb.js?_nc_x=-0u__v2uwok, line 180: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1688650439984	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+1693650442540	geckodriver	INFO	Listening on 127.0.0.1:65171
+1693650443078	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "45571" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilempLW6t"
+1693650443529	Marionette	INFO	Marionette enabled
+1693650443533	Marionette	INFO	Listening on port 36203
+WebDriver BiDi listening on ws://localhost:45571
+Read port: 36203
+1693650443668	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilempLW6t/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:45571/devtools/browser/dfe687f8-359a-4cca-820b-bff3f73fdb8c
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yP/l/nl_NL/JS56naCox55.js?_nc_x=Ij3Wp8lg5Kz, line 24: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6S44/yy/l/makehaste_jhash/OOSDgUX-3yR.js?_nc_x=8D5_VknSCuD, line 159: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1693650457754	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iCQL4/y8/l/makehaste_jhash/xChteZuDcRS_aD4YTaDSo3av8jaJ-UHljzpR5ZgNc_BnUFXkX0Xue7Hor8hZgOso5GQnq4N09gGB4mNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywEL4njK-eUP4tchXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WqgEnF3xj9R7axpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1020: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iCQL4/y8/l/makehaste_jhash/xChteZuDcRS_aD4YTaDSo3av8jaJ-UHljzpR5ZgNc_BnUFXkX0Xue7Hor8hZgOso5GQnq4N09gGB4mNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywEL4njK-eUP4tchXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WqgEnF3xj9R7axpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1020: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1693650646567	Marionette	INFO	Stopped listening on port 36203
+1693650651445	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1693650911755	geckodriver	INFO	Listening on 127.0.0.1:54063
+1693650912289	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "35307" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilef2fkV7"
+1693650912629	Marionette	INFO	Marionette enabled
+1693650912632	Marionette	INFO	Listening on port 36951
+WebDriver BiDi listening on ws://localhost:35307
+Read port: 36951
+1693650912804	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef2fkV7/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:35307/devtools/browser/32db47ce-4f78-410d-9cc9-bfce920a5937
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yP/l/nl_NL/JS56naCox55.js?_nc_x=Ij3Wp8lg5Kz, line 24: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6S44/yy/l/makehaste_jhash/OOSDgUX-3yR.js?_nc_x=8D5_VknSCuD, line 159: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1693650924620	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iCQL4/y8/l/makehaste_jhash/xChteZuDcRS_aD4YTaDSo3av8jaJ-UHljzpR5ZgNc_BnUFXkX0Xue7Hor8hZgOso5GQnq4N09gGB4mNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywEL4njK-eUP4tchXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WqgEnF3xj9R7axpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1020: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iCQL4/y8/l/makehaste_jhash/xChteZuDcRS_aD4YTaDSo3av8jaJ-UHljzpR5ZgNc_BnUFXkX0Xue7Hor8hZgOso5GQnq4N09gGB4mNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywEL4njK-eUP4tchXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WqgEnF3xj9R7axpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1020: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1693651040630	geckodriver	INFO	Listening on 127.0.0.1:38613
+1693651041161	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "65279" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexNXqRo"
+1693651041497	Marionette	INFO	Marionette enabled
+1693651041500	Marionette	INFO	Listening on port 49079
+WebDriver BiDi listening on ws://localhost:65279
+Read port: 49079
+1693651041679	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexNXqRo/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:65279/devtools/browser/fc1ad5e1-d44f-43b3-9e27-31f828afa459
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yP/l/nl_NL/JS56naCox55.js?_nc_x=Ij3Wp8lg5Kz, line 24: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iSIS4/yy/l/makehaste_jhash/55qmhhLnxjEQq2WSraySoabdQH5E5-yTvM1DIlJlfMQ1kSkGYmsF6rLJm65Xoag2nlutO3-3p3TD2PcVycOPudQJzpNIdUBOoQm2Fjofkl3c2AFd25k3Xc8GvPKaUGr8riFzQm8yrKy-nxYLtIx62IIpdn.js?_nc_x=8D5_VknSCuD, line 557: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iSIS4/yy/l/makehaste_jhash/55qmhhLnxjEQq2WSraySoabdQH5E5-yTvM1DIlJlfMQ1kSkGYmsF6rLJm65Xoag2nlutO3-3p3TD2PcVycOPudQJzpNIdUBOoQm2Fjofkl3c2AFd25k3Xc8GvPKaUGr8riFzQm8yrKy-nxYLtIx62IIpdn.js?_nc_x=8D5_VknSCuD, line 557: Error: Minified React error #422; visit https://reactjs.org/docs/error-decoder.html?invariant=422 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6S44/yy/l/makehaste_jhash/OOSDgUX-3yR.js?_nc_x=8D5_VknSCuD, line 159: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1693651053464	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iCQL4/y8/l/makehaste_jhash/xChteZuDcRS_aD4YTaDSo3av8jaJ-UHljzpR5ZgNc_BnUFXkX0Xue7Hor8hZgOso5GQnq4N09gGB4mNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywEL4njK-eUP4tchXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WqgEnF3xj9R7axpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1020: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iCQL4/y8/l/makehaste_jhash/xChteZuDcRS_aD4YTaDSo3av8jaJ-UHljzpR5ZgNc_BnUFXkX0Xue7Hor8hZgOso5GQnq4N09gGB4mNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywEL4njK-eUP4tchXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WqgEnF3xj9R7axpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1020: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1693651322929	geckodriver	INFO	Listening on 127.0.0.1:48019
+1693651323464	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "39859" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilehI84uz"
+1693651323800	Marionette	INFO	Marionette enabled
+1693651323803	Marionette	INFO	Listening on port 34717
+WebDriver BiDi listening on ws://localhost:39859
+Read port: 34717
+1693651323979	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehI84uz/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:39859/devtools/browser/b0d8f43a-7f9f-42fe-88ad-38a1eea11d2b
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yP/l/nl_NL/JS56naCox55.js?_nc_x=Ij3Wp8lg5Kz, line 24: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6S44/yy/l/makehaste_jhash/OOSDgUX-3yR.js?_nc_x=8D5_VknSCuD, line 159: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1693651335301	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iCQL4/y8/l/makehaste_jhash/xChteZuDcRS_aD4YTaDSo3av8jaJ-UHljzpR5ZgNc_BnUFXkX0Xue7Hor8hZgOso5GQnq4N09gGB4mNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywEL4njK-eUP4tchXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WqgEnF3xj9R7axpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1020: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iCQL4/y8/l/makehaste_jhash/xChteZuDcRS_aD4YTaDSo3av8jaJ-UHljzpR5ZgNc_BnUFXkX0Xue7Hor8hZgOso5GQnq4N09gGB4mNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywEL4njK-eUP4tchXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WqgEnF3xj9R7axpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1020: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1693908849332	geckodriver	INFO	Listening on 127.0.0.1:48387
+1693908849859	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "57575" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXGECvQ"
+1693908850164	Marionette	INFO	Marionette enabled
+1693908850167	Marionette	INFO	Listening on port 41283
+WebDriver BiDi listening on ws://localhost:57575
+Read port: 41283
+1693908850425	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXGECvQ/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:57575/devtools/browser/6541320c-2136-47bd-b4a9-b938857398d8
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yP/l/nl_NL/JS56naCox55.js?_nc_x=Ij3Wp8lg5Kz, line 24: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6S44/yy/l/makehaste_jhash/OOSDgUX-3yR.js?_nc_x=8D5_VknSCuD, line 159: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1693908863143	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iY4o4/yI/l/makehaste_jhash/XD23fook0hYqfyk_Tfvu8KAJD0LmxhNscav8jaJ-UHljLhlP02iAJoXUFXkX0Xue7Hor8hZgOso5Gv4RhnnSw-pwmNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywELebb_X4x8lo1hXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WaxpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1240: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iY4o4/yI/l/makehaste_jhash/XD23fook0hYqfyk_Tfvu8KAJD0LmxhNscav8jaJ-UHljLhlP02iAJoXUFXkX0Xue7Hor8hZgOso5Gv4RhnnSw-pwmNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywELebb_X4x8lo1hXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WaxpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1240: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1693908941240	Marionette	INFO	Stopped listening on port 41283
+1693908945620	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1693909026582	geckodriver	INFO	Listening on 127.0.0.1:65199
+1693909027111	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "46465" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexHJhzo"
+1693909027427	Marionette	INFO	Marionette enabled
+1693909027429	Marionette	INFO	Listening on port 41825
+WebDriver BiDi listening on ws://localhost:46465
+Read port: 41825
+1693909027700	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexHJhzo/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:46465/devtools/browser/4a45fdbe-bb92-4766-ae69-faf5c2e1fac8
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yP/l/nl_NL/JS56naCox55.js?_nc_x=Ij3Wp8lg5Kz, line 24: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6S44/yy/l/makehaste_jhash/OOSDgUX-3yR.js?_nc_x=8D5_VknSCuD, line 159: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1693909040724	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iY4o4/yI/l/makehaste_jhash/XD23fook0hYqfyk_Tfvu8KAJD0LmxhNscav8jaJ-UHljLhlP02iAJoXUFXkX0Xue7Hor8hZgOso5Gv4RhnnSw-pwmNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywELebb_X4x8lo1hXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WaxpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1240: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iY4o4/yI/l/makehaste_jhash/XD23fook0hYqfyk_Tfvu8KAJD0LmxhNscav8jaJ-UHljLhlP02iAJoXUFXkX0Xue7Hor8hZgOso5Gv4RhnnSw-pwmNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlayAS_VjFzM2njSMEdFZywELebb_X4x8lo1hXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQp4jdoYnTYxcT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WaxpIdddPXqogg21czcFvNO.js?_nc_x=8D5_VknSCuD, line 1240: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1693956917993	geckodriver	INFO	Listening on 127.0.0.1:53389
+1693956918521	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "33725" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileA9i52G"
+1693956918827	Marionette	INFO	Marionette enabled
+1693956918830	Marionette	INFO	Listening on port 47613
+WebDriver BiDi listening on ws://localhost:33725
+Read port: 47613
+1693956919085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileA9i52G/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:33725/devtools/browser/5784f73f-d520-4768-a056-fcaf03dfa724
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yP/l/nl_NL/JS56naCox55.js?_nc_x=Ij3Wp8lg5Kz, line 24: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6S44/yy/l/makehaste_jhash/OOSDgUX-3yR.js?_nc_x=8D5_VknSCuD, line 159: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1693956933568	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+1693956959133	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iums4/yP/l/makehaste_jhash/XD23fook0hYqfyk_Tfvu8KAJD0LmxhNscav8jaJ-UHljLhlP02iAJoXUFXkX0Xue7Hor8hZgOso5Gv4RhnnSw-pwmNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlaSwoop5Xra3ejSMEdFZywELebb_X4x8lo1hXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQBfc9rx90a2dThmCbtOnxQyT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WaxpIdddPXqo.js?_nc_x=8D5_VknSCuD, line 1240: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iums4/yP/l/makehaste_jhash/XD23fook0hYqfyk_Tfvu8KAJD0LmxhNscav8jaJ-UHljLhlP02iAJoXUFXkX0Xue7Hor8hZgOso5Gv4RhnnSw-pwmNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlaSwoop5Xra3ejSMEdFZywELebb_X4x8lo1hXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQBfc9rx90a2dThmCbtOnxQyT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WaxpIdddPXqo.js?_nc_x=8D5_VknSCuD, line 1240: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+[Child 61422, AudioIPC0] WARNING: 7fd7a530a820 StateCallback() state 0 cubeb error: file ./dom/media/AudioStream.cpp:673
+[Child 61422, MediaDecoderStateMachine #1] WARNING: 7fd7a530a820 OpenCubeb() failed to init cubeb: file ./dom/media/AudioStream.cpp:281
+[Child 61422, AudioIPC0] WARNING: 7fd7a23fe160 StateCallback() state 0 cubeb error: file ./dom/media/AudioStream.cpp:673
+[Child 61422, MediaDecoderStateMachine #1] WARNING: 7fd7a23fe160 OpenCubeb() failed to init cubeb: file ./dom/media/AudioStream.cpp:281
+[Child 61422, MediaDecoderStateMachine #1] WARNING: Decoder=7fd7a3dd4e00 [OnMediaSinkAudioError]: file ./dom/media/MediaDecoderStateMachine.cpp:3979
+[Child 61422, MediaDecoderStateMachine #1] WARNING: Decoder=7fd7a3dd4e00 Decode error: NS_ERROR_DOM_MEDIA_MEDIASINK_ERR (0x806e000b) - OnMediaSinkAudioError: file ./dom/media/MediaDecoderStateMachineBase.cpp:151
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1693957063434	geckodriver	INFO	Listening on 127.0.0.1:36621
+1693957063962	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "53989" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileY6lgm0"
+1693957064295	Marionette	INFO	Marionette enabled
+1693957064298	Marionette	INFO	Listening on port 43395
+WebDriver BiDi listening on ws://localhost:53989
+Read port: 43395
+1693957064463	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileY6lgm0/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:53989/devtools/browser/0f2890e9-5889-4b20-adf3-b232da8af92a
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yP/l/nl_NL/JS56naCox55.js?_nc_x=Ij3Wp8lg5Kz, line 24: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6S44/yy/l/makehaste_jhash/OOSDgUX-3yR.js?_nc_x=8D5_VknSCuD, line 159: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1693957077818	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iums4/yP/l/makehaste_jhash/XD23fook0hYqfyk_Tfvu8KAJD0LmxhNscav8jaJ-UHljLhlP02iAJoXUFXkX0Xue7Hor8hZgOso5Gv4RhnnSw-pwmNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlaSwoop5Xra3ejSMEdFZywELebb_X4x8lo1hXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQBfc9rx90a2dThmCbtOnxQyT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WaxpIdddPXqo.js?_nc_x=8D5_VknSCuD, line 1240: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3iums4/yP/l/makehaste_jhash/XD23fook0hYqfyk_Tfvu8KAJD0LmxhNscav8jaJ-UHljLhlP02iAJoXUFXkX0Xue7Hor8hZgOso5Gv4RhnnSw-pwmNE3GYUZ4Pv-llTYK8mPpVvGFijA2NnVh84BFRh_Dpo22LOoZKlfXAu58NovO7QmlaSwoop5Xra3ejSMEdFZywELebb_X4x8lo1hXN665nSlw3sTxjCDsStGqu9B_dYs_lmKfanhZUamnEQBfc9rx90a2dThmCbtOnxQyT8ERfggAOdND93FrtqQr0c7qGA5DwGt0lzi1qqRaE8I7RQn8814hfJo1VDl7zIdW_WaxpIdddPXqo.js?_nc_x=8D5_VknSCuD, line 1240: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1696789332736	geckodriver	INFO	Listening on 127.0.0.1:47927
+1696789333367	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "58057" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWjktb8"
+1696789333947	Marionette	INFO	Marionette enabled
+1696789333950	Marionette	INFO	Listening on port 34555
+WebDriver BiDi listening on ws://localhost:58057
+Read port: 34555
+1696789334174	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWjktb8/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:58057/devtools/browser/328aef6f-afc7-44e4-8b06-0eb4998b13f5
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yC/l/nl_NL/Mrfpd_OhKdt.js?_nc_x=Ij3Wp8lg5Kz, line 26: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i6yv4/yd/l/makehaste_jhash/VWZNgMqv1BnAiRjvXZVWc7TBLiTo68ueqNats2wVpEKm6Agf6ZHSlIq34n4PmKLQg7QDBdntLNlXYK1dwOpOzYmYyMCe00MX2w9pdzJjtA23or-RJaePEp-s4BSQtHsrPG5EMU6t0hOfYGzvGXW1thJ4m2h5rrHxjtu4RBiY0OTr7N0BzS3Qw7cILNe.js?_nc_x=8D5_VknSCuD, line 166: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1696789347158	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1696789371922	Marionette	INFO	Stopped listening on port 34555
+1696789372211	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1696789381019	geckodriver	INFO	Listening on 127.0.0.1:58469
+1696789381048	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "59225" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileeah2VA"
+1696789381352	Marionette	INFO	Marionette enabled
+1696789381354	Marionette	INFO	Listening on port 44379
+WebDriver BiDi listening on ws://localhost:59225
+Read port: 44379
+1696789381585	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeah2VA/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:59225/devtools/browser/318185eb-0340-4297-a7a7-1be72feb1a84
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i89k4/yC/l/nl_NL/Mrfpd_OhKdt.js?_nc_x=Ij3Wp8lg5Kz, line 26: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.facebook.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iBKc4/yi/l/makehaste_jhash/VWZNgMqv1Bn.js?_nc_x=8D5_VknSCuD, line 166: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1696789393827	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2347:11

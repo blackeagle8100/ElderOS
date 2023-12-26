@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ElderOS
+GenericName=ElderOS
+X-GNOME-FullName=ElderOS
+Exec=~/VASTSYSTEEM/KEEPRUNNING/autostartCall-Process.sh
+Terminal=false
