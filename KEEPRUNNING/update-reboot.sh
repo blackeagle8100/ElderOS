@@ -1,5 +1,5 @@
 #!/bin/bash
-password="slayer"
+password="ChangeMe"
 echo "Running apt update and full-upgrade..."
 echo "$password" | su -c "apt update && apt full-upgrade -y"
 echo "Finished running apt update and full-upgrade."
