@@ -1,0 +1,10 @@
+
+
+
+TO RECORD:
+./pushtotalk.py -o /home/sbe/VASTSYSTEEM/UsefullPrograms/SOUNDS/INTERNETuitleg.wav
+
+
+
+TO  EDIT AND MAKE USEFULL
+./audiocutter.py
