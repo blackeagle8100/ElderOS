@@ -1,8 +1,0 @@
-[Unit]
-Description=Update and Reboot Service
-
-[Service]
-ExecStart=~/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh
-
-[Install]
-WantedBy=default.target
