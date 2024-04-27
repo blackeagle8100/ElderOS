@@ -1,0 +1,4 @@
+install trough apt
+sudo apt get blinken
+
+adjust the file |	blinkenrc	| to change high scores
