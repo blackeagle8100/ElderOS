@@ -1,5 +1,5 @@
 #!/bin/bash
-password="Alotbso12"
+password="YOUR PASSWORD"
 echo "Installing..."
 echo "$password" | su -c "pip install --break-system-packages pytube pyautogui moviepy"
 echo "Finished"
