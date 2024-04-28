@@ -1,8 +1,21 @@
 #!/bin/bash
-password="CHANGEME"
+
+# Function to decrypt the password using Python script
+decrypt_password() {
+    # Call the Python script to decrypt the password
+    decrypted_password=$(python3 ~/VASTSYSTEEM/dencrypt.py decrypt "$1")
+    echo "$decrypted_password"
+}
 
 
-version=$(discord --version --password-store=basic | tr -d '\0' | sed -n 's/.*version":"\([^"]*\).*/\1/p')
+
+password=$(cat ~/VASTSYSTEEM/S)
+
+decpswd=$(decrypt_password "$password")
+echo $decpswd
+
+
+version=$(ls -d ~/.config/discord/*/ | head -n1 | grep -oP 'discord/\K[\d.]+')
 echo $version
 # Fetch the latest version available for download
 latest_redirect=$(curl -s "https://discord.com/api/download?platform=linux&format=deb")
@@ -16,13 +29,14 @@ echo $latest_version
 
 if [[ "$version" == "$latest_version" ]]; then
     echo "You are running the latest version of Discord."
-elif [[ "$version" < "$latest_version" ]]; then
+    
+elif [[ "$version" != "$latest_version" ]]; then
     echo "There is a newer version available: $latest_version"
-    pkill discord
+    pkill Discord
     sleep 0.3
     wget https://discordapp.com/api/download?platform=linux -O ~/Downloads/discord.deb
     cd ~/Downloads
-    echo "$password" | su -c "apt install ./discord.deb -y"
+    echo "$decpswd" | sudo -S "apt install ./discord.deb -y"
     discord --password-store=basic &
     sleep 4
     discord_window_id=$(wmctrl -lx | grep "discord" | awk '{print $1}')
