@@ -1,6 +1,59 @@
 #!/bin/bash
 
-password="ChangeMe"
+# Function to encrypt the password using Python script
+encrypt_password() {
+    # Call the Python script to encrypt the password
+    encrypted_password=$(python3 ~/VASTSYSTEEM/dencrypt.py encrypt "$1")
+    echo "$encrypted_password"
+}
+
+# Function to decrypt the password using Python script
+decrypt_password() {
+    # Call the Python script to decrypt the password
+    decrypted_password=$(python3 ~/VASTSYSTEEM/dencrypt.py decrypt "$1")
+    echo "$decrypted_password"
+}
+
+# Function to check sudo password
+check_sudo_password() {
+    local password=$1
+    if echo "$password" | sudo -S true >/dev/null 2>&1; then
+        return 0  # Password is correct
+    else
+        return 1  # Password is incorrect
+    fi
+}
+
+
+
+# Prompt user for su password until it's correct
+while true; do
+    # Prompt user for password and store it in a variable
+    read -sp "Enter sudo password: " sudo_password
+
+    # Check if the password is correct
+    if check_sudo_password "$sudo_password"; then
+        echo -e "\nSudo password is correct."
+        encrypted_password=$(encrypt_password "$sudo_password")
+        echo "$encrypted_password" > ~/VASTSYSTEEM/S
+        break  # Exit the loop if the password is correct
+    else
+        echo -e "\nSudo password is incorrect. Please try again."
+    fi
+done
+
+    # Check if su password is correct
+    #if check_su_password "$sudo_password"; then
+    #   echo "Correct su password. Continuing."
+    #   encrypted_password=$(encrypt_password "$sudo_password")
+#	touch S
+#   	echo "$encrypted_password" > ~/VASTSYSTEEM/S
+#       break
+#   else
+#       echo "Incorrect su password. Please try again."
+#   fi
+
+
 
 menu() {
     clear
@@ -73,9 +126,8 @@ packagesInstall(){
             echo "Installing packages."
             cd ..
             cd ..
-            mv ElderOS-main VASTSYSTEEM
             chmod -R +x VASTSYSTEEM
-            echo "$password" | su -c "apt install spyder python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia scrot notepadqq wmctrl htop -y"
+            echo "$sudo_password" | su -c "apt install spyder python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia scrot notepadqq wmctrl htop -y"
             pip install pytube pyautogui moviepy
             menu
             extensionsInstall
