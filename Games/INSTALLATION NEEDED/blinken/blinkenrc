@@ -1,0 +1,45 @@
+[Level1]
+Name1=SWAT
+Name2=SWAT
+Name3=SWAT
+Name4=SWAT
+Name5=SWAT
+Score1=99
+Score2=99
+Score3=99
+Score4=99
+Score5=99
+
+[Level2]
+Name1=SWAT
+Name2=SWAT
+Name3=SWAT
+Name4=SWAT
+Name5=SWAT
+Score1=99
+Score2=99
+Score3=99
+Score4=99
+Score5=99
+
+[Level3]
+Name1=SWAT
+Name2=SWAT
+Name3=SWAT
+Name4=SWAT
+Name5=SWAT
+Score1=99
+Score2=99
+Score3=99
+Score4=99
+Score5=99
+
+[MainWindow]
+1920x1080 screen: Window-Maximized=true
+1920x1080 screen: XPosition=418
+1920x1080 screen: YPosition=532
+HDMI-0=HDMI-0
+RestorePositionForNextInstance=true
+
+[general]
+customFont=false
