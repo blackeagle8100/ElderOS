@@ -13,7 +13,8 @@ from PyQt6.QtWidgets import (
     QLabel, QLineEdit, QCheckBox, QFrame, QWidget
 )
 
-   
+user_home = os.path.expanduser("~")
+vastsysteem_path = os.path.join(user_home, "VASTSYSTEEM")
        
 def gevorderd(self):
     print('gevorderd')
@@ -618,7 +619,7 @@ class AdvancedWindow(QMainWindow):
              config.write(config_file)
              
         #pkill memeos
-          command_line_to_kill = "python3 MemeOS-autoresize.py"
+          command_line_to_kill = "python3 ElderOS.py"
           for process in psutil.process_iter(attrs=['pid', 'name', 'cmdline']):
              try:
                  if process.info['cmdline'] and ' '.join(process.info['cmdline']) == command_line_to_kill:
@@ -628,7 +629,7 @@ class AdvancedWindow(QMainWindow):
              except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
                pass
        
-          subprocess.Popen(['python3', 'MemeOS-autoresize.py'])  #open MEMEOS
+          subprocess.Popen(['python3', 'ElderOS.py'])  #open ElderOS
           self.close() #close settings
  #------------end defines--------------
         
@@ -638,9 +639,8 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     # Read settings from the configuration file
     screen_width, screen_height = pyautogui.size()
-    directory = '/home/sbe/VASTSYSTEEM'
     filename = 'settings.ini'
-    filepath = os.path.join(directory, filename)
+    filepath = os.path.join(vastsysteem_path, filename)
     config = configparser.ConfigParser()
     if not os.path.isfile(filepath):
         basecolor = '#D38DB3'
