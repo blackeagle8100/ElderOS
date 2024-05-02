@@ -173,5 +173,6 @@ extensionsInstall(){
 menu
 
 packagesInstall
-cd ElderOS/Usefullprograms
+cd VASTSYSTEEM/Usefullprograms
+pwd
 ./seleniumdriverdownloader.sh
