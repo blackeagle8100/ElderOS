@@ -127,8 +127,8 @@ packagesInstall(){
         if [[ $choice == 1 ]]; then
             echo "Installing packages."
             
-            echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia scrot notepadqq wmctrl htop -y"
-            pip install pytube pyautogui moviepy
+            echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia python3-google-auth python3-google-auth-oauthlib scrot wmctrl notepadqq htop -y"
+            pip install pytube pyautogui moviepy --break-system-packages
             menu
             extensionsInstall
         elif [[ $choice == 2 ]]; then
