@@ -174,5 +174,4 @@ menu
 
 packagesInstall
 cd VASTSYSTEEM/UsefullPrograms
-pwd
 ./seleniumdriverdownloader.sh
