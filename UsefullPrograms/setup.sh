@@ -16,8 +16,7 @@ decrypt_password() {
 
 # Function to check sudo password
 check_sudo_password() {
-    local password=$1
-    if echo "$password" | sudo -S true >/dev/null 2>&1; then
+    if echo "$sudo_password" | su -c true >/dev/null 2>&1; then
         return 0  # Password is correct
     else
         return 1  # Password is incorrect
@@ -29,16 +28,17 @@ check_sudo_password() {
 # Prompt user for su password until it's correct
 while true; do
     # Prompt user for password and store it in a variable
-    read -sp "Enter sudo password: " sudo_password
+    read -sp "Enter su password: " sudo_password
 
     # Check if the password is correct
     if check_sudo_password "$sudo_password"; then
-        echo -e "\nSudo password is correct."
+        echo -e "\nSu password is correct."
         encrypted_password=$(encrypt_password "$sudo_password")
+        touch S
         echo "$encrypted_password" > ~/VASTSYSTEEM/S
         break  # Exit the loop if the password is correct
     else
-        echo -e "\nSudo password is incorrect. Please try again."
+        echo -e "\nSu password is incorrect. Please try again."
     fi
 done
 
@@ -53,25 +53,25 @@ done
 #       echo "Incorrect su password. Please try again."
 #   fi
 
-
+echo"██████"
 
 menu() {
     clear
 
     echo "*******************************************************************"
-    echo "***** * * * *** **********  * * **** * * * ***  ***  **************"
-    echo "***** ********* ********** ****** ** ********* ***** **************"
-    echo "***** ********* ********** ****** ** ********* ***** **************"
-    echo "***** *** * *** ********** ****** ** *** * *** * **  **************"
-    echo "***** ********* ********** ****** ** ********* **** ***************"
-    echo "***** ********* ********** ****** ** ********* ***** **************"
-    echo "***** * * * *** *** *  ***  * * **** * * * *** ****** *************"
+    echo "*****███████***█**********██████****███████***███████**************"
+    echo "*****█*********█**********█******█**█*********█*****█**************"
+    echo "*****█*********█**********█******█**█*********█*****█**************"
+    echo "*****███████***█**********█******█**███████***██████***************"
+    echo "*****█*********█**********█******█**█*********█****█***************"
+    echo "*****█*********█**********█******█**█*********█*****█**************"
+    echo "*****███████***████████***██████****███████***█******█*************"
     echo "*******************************************************************"
-    echo "******************* * * * * *** ** ** *****************************"
-    echo "******************* ******* *** ***********************************"
-    echo "******************* ******* *** * *** *****************************"
-    echo "******************* ******* ********* *****************************"
-    echo "******************* * * * * *** * *** *****************************"
+    echo "*******************█████████***██████******************************"
+    echo "*******************█*******█***█***********************************"
+    echo "*******************█*******█***██████******************************"
+    echo "*******************█*******█********█******************************"
+    echo "*******************█████████***██████******************************"
     echo "*******************************************************************"
 
     # Define an array of items
@@ -126,8 +126,9 @@ packagesInstall(){
             echo "Installing packages."
             cd ..
             cd ..
+            mv ElderOS VASTSYSTEEM
             chmod -R +x VASTSYSTEEM
-            echo "$sudo_password" | su -c "apt install spyder python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia scrot notepadqq wmctrl htop -y"
+            echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia scrot notepadqq wmctrl htop -y"
             pip install pytube pyautogui moviepy
             menu
             extensionsInstall
@@ -151,11 +152,12 @@ extensionsInstall(){
     if [ $? -eq 0 ]; then
         valid_input
         if [[ $choice == 1 ]]; then
-            echo "gnome extensions wanted: No overview at start-up and Hide top bar"
+            echo "gnome extensions wanted: No overview at start-up and Hide top bar and also gnome for TV"
             echo "Press Enter to continue"
             read -r
             echo "Browser starting..."
             firefox extensions.gnome.org
+            firefox https://www.google.com/intl/nl/chrome/
             menu
         elif [[ $choice == 2 ]]; then
             menu
@@ -172,4 +174,5 @@ extensionsInstall(){
 menu
 
 packagesInstall
-
+cd VASTSYSTEEM/Usefullprograms
+./seleniumdriverdownloader.sh
