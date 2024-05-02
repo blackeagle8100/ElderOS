@@ -151,7 +151,7 @@ extensionsInstall(){
     if [ $? -eq 0 ]; then
         valid_input
         if [[ $choice == 1 ]]; then
-            echo "gnome extensions wanted: No overview at start-up and Hide top bar and also gnome for TV"
+            echo "gnome extensions wanted: No overview at start-up and Hide top bar and also chrome for TV"
             echo "Press Enter to continue"
             read -r
             echo "Browser starting..."
@@ -173,5 +173,5 @@ extensionsInstall(){
 menu
 
 packagesInstall
-cd VASTSYSTEEM/Usefullprograms
+cd ElderOS/Usefullprograms
 ./seleniumdriverdownloader.sh
