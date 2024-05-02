@@ -25,7 +25,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("MAIN")
         outputstring = ("background-color: " + config.get('Settings', 'colorcode') + ";")
         self.setStyleSheet(outputstring)  # Set the background color
-        self.setWindowFlag(Qt.FramelessWindowHint)
+       # self.setWindowFlag(Qt.FramelessWindowHint)
         self.showFullScreen()
         
         # Create a list of enabled apps based on configuration settings
@@ -204,7 +204,7 @@ class MainWindow(QMainWindow):
         elif self.uitvoer == 'Games':    
             subprocess.Popen(["python3", "GamesMenu.py"])
         elif self.uitvoer == "Help":
-            subprocess.Popen(["bash", "-c","./helptest.sh"])
+            subprocess.Popen(["python3","./helptest.py"])
         elif self.uitvoer == "Wekker":
             print(("Open de wekker"))
         elif self.uitvoer =="Kalender":
