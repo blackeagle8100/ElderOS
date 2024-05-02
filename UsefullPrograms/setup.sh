@@ -173,6 +173,6 @@ extensionsInstall(){
 menu
 
 packagesInstall
-cd VASTSYSTEEM/Usefullprograms
+cd VASTSYSTEEM/UsefullPrograms
 pwd
 ./seleniumdriverdownloader.sh
