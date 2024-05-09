@@ -23,6 +23,9 @@ check_sudo_password() {
     fi
 }
 
+
+
+
 cd ~/
 mv ElderOS VASTSYSTEEM
 chmod -R +x VASTSYSTEEM
@@ -126,7 +129,12 @@ packagesInstall(){
         valid_input
         if [[ $choice == 1 ]]; then
             echo "Installing packages."
-            
+            if ! type jq >/dev/null 2>&1; then
+                echo "$sudo_password" | su -c "apt install jq -y"
+            fi
+            if ! type curl >/dev/null 2>&1; then
+                echo "$sudo_password" | su -c "apt install curl -y"
+            fi
             echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia python3-google-auth python3-google-auth-oauthlib scrot wmctrl notepadqq blinken htop -y"
             pip install pytube pyautogui moviepy --break-system-packages
             menu
