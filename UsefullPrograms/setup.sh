@@ -55,7 +55,7 @@ done
 #       echo "Incorrect su password. Please try again."
 #   fi
 
-echo"██████"
+
 
 menu() {
     clear
@@ -127,7 +127,7 @@ packagesInstall(){
         if [[ $choice == 1 ]]; then
             echo "Installing packages."
             
-            echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia python3-google-auth python3-google-auth-oauthlib scrot wmctrl notepadqq htop -y"
+            echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia python3-google-auth python3-google-auth-oauthlib scrot wmctrl notepadqq blinken htop -y"
             pip install pytube pyautogui moviepy --break-system-packages
             menu
             extensionsInstall
@@ -152,11 +152,13 @@ extensionsInstall(){
         valid_input
         if [[ $choice == 1 ]]; then
             echo "gnome extensions wanted: No overview at start-up and Hide top bar and also chrome for TV"
-            echo "Press Enter to continue"
+            echo "Press Enter to open browser"
             read -r
             echo "Browser starting..."
             firefox extensions.gnome.org
             firefox https://www.google.com/intl/nl/chrome/
+            echo "Press Enter to continue"
+            read -r
             menu
         elif [[ $choice == 2 ]]; then
             menu
@@ -171,7 +173,6 @@ extensionsInstall(){
 }
 
 menu
-
+cp ~/VASTSYSTEEM/KEEPRUNNING/ElderOS.desktop ~/.config/autostart
 packagesInstall
-cd VASTSYSTEEM/UsefullPrograms
-./seleniumdriverdownloader.sh
+exec ~/VASTSYSTEEM/UsefullPrograms/seleniumdriverdownloader.sh
