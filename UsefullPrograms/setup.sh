@@ -38,6 +38,7 @@ while true; do
     # Check if the password is correct
     if check_sudo_password "$sudo_password"; then
         echo -e "\nSu password is correct."
+        echo "$sudo_password" | su -c "apt install python3-cryptography -y"
         encrypted_password=$(encrypt_password "$sudo_password")
         touch S
         echo "$encrypted_password" > ~/VASTSYSTEEM/S
@@ -181,6 +182,6 @@ extensionsInstall(){
 }
 
 menu
-cp ~/VASTSYSTEEM/KEEPRUNNING/ElderOS.desktop ~/.config/autostart
+cp ~/VASTSYSTEEM/KEEPRUNNING/ElderOS.desktop ~/.config/autostart/
 packagesInstall
 exec ~/VASTSYSTEEM/UsefullPrograms/seleniumdriverdownloader.sh
