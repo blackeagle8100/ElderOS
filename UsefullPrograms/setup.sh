@@ -136,8 +136,8 @@ packagesInstall(){
             if ! type curl >/dev/null 2>&1; then
                 echo "$sudo_password" | su -c "apt install curl -y"
             fi
-            echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia python3-google-auth python3-google-auth-oauthlib scrot wmctrl notepadqq blinken htop -y"
-            pip install pytube pyautogui moviepy --break-system-packages
+            echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia python3-google-auth python3-google-auth-oauthlib scrot wmctrl notepadqq blinken htop python3-click python3-tk aisleriot python3-pil python3-grpc-tools python3-tenacity -y"
+            pip install pytube pyautogui moviepy google-assistant-grpc sounddevice --break-system-packages
             menu
             extensionsInstall
         elif [[ $choice == 2 ]]; then
