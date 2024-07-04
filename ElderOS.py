@@ -9,12 +9,13 @@ import configparser
 from PIL.ImageQt import ImageQt
 from PIL import Image
 import os
+import pygame
 # Create a ConfigParser object
 config = configparser.ConfigParser()
-
+pygame.init()
 user_home = os.path.expanduser("~")
 vastsysteem_path = os.path.join(user_home, "VASTSYSTEEM")
-
+AIaudio_path = os.path.join(vastsysteem_path, "UsefullPrograms/SOUNDS/AIsounds/")
 # Read the INI file
 config.read(vastsysteem_path + '/settings.ini')
 screen_height = int(config.get('Settings', 'screen_height'))
@@ -59,6 +60,7 @@ class MainWindow(QMainWindow):
         if int(config.get('Settings', 'vkalender')) == 1:
             self.enabled_apps.append("Kalender")
             self.uitvoer = 'Kalender'
+
         if int(config.get('Settings', 'vwekker')) == 1:
             self.enabled_apps.append("Wekker")
             self.uitvoer = 'Wekker'
@@ -189,7 +191,7 @@ class MainWindow(QMainWindow):
         elif self.uitvoer == 'Muziekspeler':
             self.openSpeler()
             print("MUZIEK!")
-            
+           
         elif self.uitvoer == 'Patience':
             self.openPatience()
             
@@ -207,9 +209,14 @@ class MainWindow(QMainWindow):
             subprocess.Popen(["python3","./helptest.py"])
         elif self.uitvoer == "Wekker":
             print(("Open de wekker"))
+            sound_path = (AIaudio_path + "unavailable.wav")
+            pygame.mixer.music.load(sound_path)
+            pygame.mixer.music.play()
         elif self.uitvoer =="Kalender":
             print("Open de kalender")
-
+            sound_path = (AIaudio_path + "unavailable.wav")
+            pygame.mixer.music.load(sound_path)
+            pygame.mixer.music.play()
        
     
     def volgende(self, event=None):
