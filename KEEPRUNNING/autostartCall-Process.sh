@@ -1,11 +1,21 @@
 #!/bin/bash
 
-cd ~/VASTSYSTEEM
-./ElderOS.py &
-cd KEEPRUNNING
-./opendiscord.py
-./discordbot.py &
-./cordEnhance.sh
+vastsysteem-call() {
+    ~/VASTSYSTEEM/MemeOS-autoresize.py
+}
+cordenhance() {
+    cd ~/VASTSYSTEEM/KEEPRUNNING
+    ./cordEnhance.sh
+}
 
+cordbot() {
+    cd ~/VASTSYSTEEM/KEEPRUNNING
+    ./cordbot.py
+}
 
+vastsysteem-call &
+cordenhance
+
+sleep 20
 wmctrl -a MAIN
+cordbot
