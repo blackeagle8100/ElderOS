@@ -23,8 +23,24 @@ check_sudo_password() {
     fi
 }
 
+programs=("curl" "wget" "git" "python3" "python3-cryptography" "jq" "python3-pygame" "python3-opencv" "python3-pip" "python3-mutagen" "python3-selenium" "xdotool" "python3-pyqt6" "python3-pyqt6.qtwebengine" "python3-pyqt6.qtmultimedia" "python3-google-auth" "python3-google-auth-oauthlib" "scrot" "wmctrl" "kate" "blinken" "htop" "python3-click" "python3-tk" "aisleriot" "python3-pil" "python3-grpc-tools" "python3-tenacity")
+notInst=()
 
+check_program() {
+    if type "$1" &> /dev/null; then
+        echo -e "$1: \u2714️"  # "V" (Check Mark)
+    else
+        echo -e "$1: \u274C"  # "X" (Cross Mark)
+        notInst+=("$1")
+    fi
+}
 
+for program in "${programs[@]}"; do
+    check_program "$program"
+done
+for prog in "${notInst[@]}"; do
+    echo "$prog not installed"
+done
 
 cd ~/
 mv ElderOS VASTSYSTEEM
@@ -38,7 +54,10 @@ while true; do
     # Check if the password is correct
     if check_sudo_password "$sudo_password"; then
         echo -e "\nSu password is correct."
-        echo "$sudo_password" | su -c "apt install python3-cryptography -y"
+        for prog in "${notInst[@]}"; do
+            echo "Installing $prog"
+            echo "$sudo_password" | su -c "apt install $prog -y"
+        done
         encrypted_password=$(encrypt_password "$sudo_password")
         touch S
         echo "$encrypted_password" > ~/VASTSYSTEEM/S
@@ -130,13 +149,6 @@ packagesInstall(){
         valid_input
         if [[ $choice == 1 ]]; then
             echo "Installing packages."
-            if ! type jq >/dev/null 2>&1; then
-                echo "$sudo_password" | su -c "apt install jq -y"
-            fi
-            if ! type curl >/dev/null 2>&1; then
-                echo "$sudo_password" | su -c "apt install curl -y"
-            fi
-            echo "$sudo_password" | su -c "apt install python3-pygame python3-opencv python3-pip python3-mutagen python3-selenium xdotool python3-pyqt6 python3-pyqt6.qtwebengine python3-pyqt6.qtmultimedia python3-google-auth python3-google-auth-oauthlib scrot wmctrl notepadqq blinken htop python3-click python3-tk aisleriot python3-pil python3-grpc-tools python3-tenacity -y"
             pip install pytube pyautogui moviepy google-assistant-grpc sounddevice --break-system-packages
             menu
             extensionsInstall
@@ -185,3 +197,5 @@ menu
 cp ~/VASTSYSTEEM/KEEPRUNNING/ElderOS.desktop ~/.config/autostart/
 packagesInstall
 exec ~/VASTSYSTEEM/UsefullPrograms/seleniumdriverdownloader.sh
+echo "$sudo_password" | su -c "cp ~/VASTSYSTEEM/KEEPRUNNING/update-reboot.timer /etc/systemd/system/"
+echo "$sudo_password" | su -c "cp ~/VASTSYSTEEM/KEEPRUNNING/update-reboot.service /etc/systemd/system/"
