@@ -197,5 +197,4 @@ menu
 cp ~/VASTSYSTEEM/KEEPRUNNING/ElderOS.desktop ~/.config/autostart/
 packagesInstall
 exec ~/VASTSYSTEEM/UsefullPrograms/seleniumdriverdownloader.sh
-echo "$sudo_password" | su -c "cp ~/VASTSYSTEEM/KEEPRUNNING/update-reboot.timer /etc/systemd/system/"
-echo "$sudo_password" | su -c "cp ~/VASTSYSTEEM/KEEPRUNNING/update-reboot.service /etc/systemd/system/"
+exec ~/VASTSYSTEEM/KEEPRUNNING/update-reboot-setup.sh
