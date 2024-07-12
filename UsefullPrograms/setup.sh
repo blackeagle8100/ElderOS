@@ -55,10 +55,11 @@ check_program() {
         echo -e "$1: \u2714️"  # "V" (Check Mark)
     else
         echo -e "$1: \u274C"  # "X" (Cross Mark)
-        notInst+=("$1")
         if [ "${programs[$i]}" = "sol" ]; then
             programs[$i]="aisleriot"
         fi
+        
+        notInst+=("$1")
     fi
 }
 
@@ -66,9 +67,7 @@ for program in "${programs[@]}"; do
     check_program "$program"
 done
 
-for pip in "${pips[@]}"; do
-    check_pip "$pip"
-done
+
 cd ~/
 mv ElderOS VASTSYSTEEM
 chmod -R +x VASTSYSTEEM
@@ -84,6 +83,9 @@ while true; do
         for prog in "${notInst[@]}"; do
             echo "Installing $prog"
             echo "$sudo_password" | su -c "apt install $prog -y"
+        done
+        for pip in "${pips[@]}"; do
+            check_pip "$pip"
         done
         for app in "${notpip[@]}"; do
             echo "Installing $app"
