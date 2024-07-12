@@ -91,7 +91,7 @@ class MainWindow(QMainWindow):
         self.btnVolgende = QLabel(" ", self)
         self.btnVolgende.setFixedSize(200, screen_height - 20)
       
-        im = Image.open(r"./icons/arrowleft.png") 
+        im = Image.open(vastsysteem_path + "/icons/arrowleft.png") 
         newsize = (200, screen_height - 20)
         cropped_image = im.resize(newsize)
         q_image = ImageQt(cropped_image)  # Convert PIL image to QImage
@@ -106,7 +106,7 @@ class MainWindow(QMainWindow):
         self.btnVorige = QLabel(" ", self)
         self.btnVorige.setFixedSize(200, screen_height - 20)
       
-        im = Image.open(r"./icons/arrowright.png") 
+        im = Image.open(vastsysteem_path + "/icons/arrowright.png") 
         newsize = (200, screen_height - 20)
         cropped_image = im.resize(newsize)
         q_image = ImageQt(cropped_image)  # Convert PIL image to QImage
