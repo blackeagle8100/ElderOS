@@ -2,7 +2,7 @@
 Description=Update and Reboot Service
 
 [Service]
-ExecStart=~/Documenten/KEEPRUNNING/update-reboot.sh
+ExecStart=~/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh
 
 [Install]
 WantedBy=default.target
