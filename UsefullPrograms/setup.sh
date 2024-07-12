@@ -22,12 +22,24 @@ check_sudo_password() {
         return 1  # Password is incorrect
     fi
 }
-
+directory="$HOME/.config/autostart"
 programs=("curl" "wget" "git" "python3" "jq" "xdotool" "scrot" "wmctrl" "kate" "blinken" "htop" "sol")
 notInst=()
 
 pips=("tenacity" "cryptography" "pygame" "opencv" "pip" "mutagen" "selenium" "pyqt6" "pyqt6.qtwebengine" "pyqt6.qtmultimedia" "google-auth" "google-auth-oauthlib" "click" "tk" "pil" "grpc-tools")
 notpip=()
+
+if [ -d "$directory" ]; then
+  echo "Nice."
+else
+  echo "'$directory' does not exist. Creating..."
+  mkdir -p "$directory"
+  if [ $? -eq 0 ]; then
+    echo "created successfully."
+  else
+    echo "Failed to create."
+  fi
+fi
 
 check_pip() {
     if pip show "$1" &> /dev/null; then
