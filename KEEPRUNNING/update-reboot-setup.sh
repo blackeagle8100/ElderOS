@@ -14,5 +14,5 @@ echo "$decpswd" | su -c "cp VASTSYSTEEM/KEEPRUNNING/update-reboot.service /etc/s
 echo "$decpswd" | su -c "cp VASTSYSTEEM/KEEPRUNNING/update-reboot.timer /etc/systemd/system"
 echo "Activating timer"
 echo "$decpswd" | su -c "systemctl daemon-reload"
-echo "$decpswd" | su -c "systemctl start update-reboot.timer"
 echo "$decpswd" | su -c "systemctl enable update-reboot.timer"
+echo "$decpswd" | su -c "systemctl start update-reboot.timer"
