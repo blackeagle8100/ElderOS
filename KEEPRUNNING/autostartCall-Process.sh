@@ -1,7 +1,7 @@
 #!/bin/bash
 
 vastsysteem-call() {
-    ~/VASTSYSTEEM/MemeOS-autoresize.py
+    ~/VASTSYSTEEM/ElderOS.py
 }
 cordenhance() {
     cd ~/VASTSYSTEEM/KEEPRUNNING
