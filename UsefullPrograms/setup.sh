@@ -23,8 +23,20 @@ check_sudo_password() {
     fi
 }
 
-programs=("curl" "wget" "git" "python3" "python3-cryptography" "jq" "python3-pygame" "python3-opencv" "python3-pip" "python3-mutagen" "python3-selenium" "xdotool" "python3-pyqt6" "python3-pyqt6.qtwebengine" "python3-pyqt6.qtmultimedia" "python3-google-auth" "python3-google-auth-oauthlib" "scrot" "wmctrl" "kate" "blinken" "htop" "python3-click" "python3-tk" "aisleriot" "python3-pil" "python3-grpc-tools" "python3-tenacity")
+programs=("curl" "wget" "git" "python3" "jq" "xdotool" "scrot" "wmctrl" "kate" "blinken" "htop" "sol")
 notInst=()
+
+pip=("tenacity" "cryptography" "pygame" "opencv" "pip" "mutagen" "selenium" "pyqt6" "pyqt6.qtwebengine" "pyqt6.qtmultimedia" "google-auth" "google-auth-oauthlib" "click" "tk" "pil" "grpc-tools")
+notpip=()
+
+check_pip() {
+    if pip show "$1" &> /dev/null; then
+        echo -e "$1: \u2714️"  # "V" (Check Mark)
+    else
+        echo -e "$1: \u274C"  # "X" (Cross Mark)
+        notpip+=("$1")
+    fi
+}
 
 check_program() {
     if type "$1" &> /dev/null; then
@@ -32,6 +44,9 @@ check_program() {
     else
         echo -e "$1: \u274C"  # "X" (Cross Mark)
         notInst+=("$1")
+        if [ "${programs[$i]}" = "sol" ]; then
+            programs[$i]="aisleriot"
+        fi
     fi
 }
 
@@ -55,6 +70,10 @@ while true; do
         for prog in "${notInst[@]}"; do
             echo "Installing $prog"
             echo "$sudo_password" | su -c "apt install $prog -y"
+        done
+        for app in "${notpip[@]}"; do
+            echo "Installing $app"
+            echo "$sudo_password" | su -c "apt install python3-$app -y"
         done
         encrypted_password=$(encrypt_password "$sudo_password")
         touch S
