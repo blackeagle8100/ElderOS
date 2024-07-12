@@ -231,5 +231,5 @@ extensionsInstall(){
 menu
 cp ~/VASTSYSTEEM/KEEPRUNNING/ElderOS.desktop ~/.config/autostart/
 packagesInstall
-exec ~/VASTSYSTEEM/UsefullPrograms/seleniumdriverdownloader.sh
-exec ~/VASTSYSTEEM/KEEPRUNNING/update-reboot-setup.sh
+~/VASTSYSTEEM/UsefullPrograms/seleniumdriverdownloader.sh
+~/VASTSYSTEEM/KEEPRUNNING/update-reboot-setup.sh
