@@ -38,9 +38,7 @@ check_program() {
 for program in "${programs[@]}"; do
     check_program "$program"
 done
-for prog in "${notInst[@]}"; do
-    echo "$prog not installed"
-done
+
 
 cd ~/
 mv ElderOS VASTSYSTEEM
