@@ -208,7 +208,9 @@ extensionsInstall(){
             read -r
             echo "Browser starting..."
             firefox extensions.gnome.org
-            firefox https://www.google.com/intl/nl/chrome/
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/Downloads/chrome.deb
+            cd ~/Downloads
+            echo "$sudo_password" | su -c "apt install ./chrome.deb -y"
             echo "Press Enter to continue"
             read -r
             menu
