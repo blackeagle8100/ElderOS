@@ -36,7 +36,7 @@ elif [[ "$version" != "$latest_version" ]]; then
     sleep 0.3
     wget https://discordapp.com/api/download?platform=linux -O ~/Downloads/discord.deb
     cd ~/Downloads
-    echo "$decpswd" | sudo -S "apt install ./discord.deb -y"
+    echo "$decpswd" | su -c "apt install ./discord.deb -y"
     discord --password-store=basic &
     sleep 4
     discord_window_id=$(wmctrl -lx | grep "discord" | awk '{print $1}')
