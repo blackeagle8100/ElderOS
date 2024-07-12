@@ -6,7 +6,7 @@ decrypt_password() {
     decrypted_password=$(python3 ~/VASTSYSTEEM/dencrypt.py decrypt "$1")
     echo "$decrypted_password"
 }
-
+pwd
 password=$(cat ~/VASTSYSTEEM/S)
 decpswd=$(decrypt_password "$password")
 echo "Copying necessary update-reboot files..."
