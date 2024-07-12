@@ -6,7 +6,9 @@ decrypt_password() {
     decrypted_password=$(python3 ~/VASTSYSTEEM/dencrypt.py decrypt "$1")
     echo "$decrypted_password"
 }
-pwd
+path=$(pwd)
+sed -i "s|ExecStart=~/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh|ExecStart=${home_directory}/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh|" "VASTSYSTEEM/KEEPRUNNING/update-reboot.service"
+
 password=$(cat ~/VASTSYSTEEM/S)
 decpswd=$(decrypt_password "$password")
 echo "Copying necessary update-reboot files..."
