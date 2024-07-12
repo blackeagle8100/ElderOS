@@ -26,7 +26,7 @@ check_sudo_password() {
 programs=("curl" "wget" "git" "python3" "jq" "xdotool" "scrot" "wmctrl" "kate" "blinken" "htop" "sol")
 notInst=()
 
-pip=("tenacity" "cryptography" "pygame" "opencv" "pip" "mutagen" "selenium" "pyqt6" "pyqt6.qtwebengine" "pyqt6.qtmultimedia" "google-auth" "google-auth-oauthlib" "click" "tk" "pil" "grpc-tools")
+pips=("tenacity" "cryptography" "pygame" "opencv" "pip" "mutagen" "selenium" "pyqt6" "pyqt6.qtwebengine" "pyqt6.qtmultimedia" "google-auth" "google-auth-oauthlib" "click" "tk" "pil" "grpc-tools")
 notpip=()
 
 check_pip() {
@@ -54,7 +54,9 @@ for program in "${programs[@]}"; do
     check_program "$program"
 done
 
-
+for pip in "${pips[@]}"; do
+    check_pip "$pip"
+done
 cd ~/
 mv ElderOS VASTSYSTEEM
 chmod -R +x VASTSYSTEEM
