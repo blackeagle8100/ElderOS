@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import sys
-import serial
 import time
 import configparser
 import os
@@ -11,7 +10,6 @@ import re
 from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QGridLayout, QHBoxLayout, QVBoxLayout, QLabel
 from PyQt6.QtGui import QPixmap, QFont
 from PyQt6.QtCore import Qt, QTime, QTimer
-
 from PIL.ImageQt import ImageQt
 from PIL import Image
 
@@ -20,15 +18,12 @@ from PIL import Image
 # Create a ConfigParser object
 config = configparser.ConfigParser()
 
-
-
 user_home = os.path.expanduser("~")
 global vastsysteem_path
 vastsysteem_path = os.path.join(user_home, "VASTSYSTEEM")
 
 # Read the INI file
 config.read(vastsysteem_path + '/settings.ini')
-pincode = int(config.get('Settings', 'pincode'))
 
 global colorcode
 colorcode = config.get('Settings', 'colorcode')
@@ -38,14 +33,7 @@ font_type = config.get('Settings', 'font_type')
 font_size = int(config.get('Settings', 'font_size'))
 
 bgcolor = ("background-color: " + config.get('Settings', 'colorcode') + ";")
-
-serial_port = '/dev/ttyUSB0'  # Change this to match your serial port
-baud_rate = 9600
-# Initialize the serial connection
-ser = serial.Serial(serial_port, baud_rate, timeout=1)
-
-
-
+device_ip = config.get('Settings', 'smartip')
 
 class PhoneApp(QWidget):
     def __init__(self):
@@ -77,8 +65,6 @@ class PhoneApp(QWidget):
             button.clicked.connect(lambda _, text=button_text: self.btnsend(text))
             grid_layout.addWidget(button, *position)
 
-        
-        
         self.call_button = QLabel('')
         im = Image.open(vastsysteem_path+"/icons/neemop.png")
         newsize = (200,200)
@@ -127,8 +113,6 @@ class PhoneApp(QWidget):
         self.btndelete.setStyleSheet("background-color: black; color: white;")
         # Create vertical layout to organize the grid, buttons, and label
         
-        
-        
         vbox_layout = QVBoxLayout()
         vmid = QVBoxLayout()
         vmid.setAlignment(Qt.AlignmentFlag.AlignHCenter |Qt.AlignmentFlag.AlignTop)
@@ -142,10 +126,7 @@ class PhoneApp(QWidget):
         vbox_layout.addLayout(vmid)
         
         vbox_layout.addLayout(hbox_layout)
-        
-        
-        
-        
+
         self.setLayout(vbox_layout)
         self.show()
     
@@ -156,8 +137,6 @@ class PhoneApp(QWidget):
             text = text[:-1] 
             self.nummerlabel.setText(text)
         
-
-
     def btnsend(self, button):
         print("send the button ", button)
         text =  self.nummerlabel.text()
@@ -166,7 +145,6 @@ class PhoneApp(QWidget):
         print('nieuw: ', text)
         self.nummerlabel.setText(text)
     
-
     def startklok(self):
         # Create and start the timer
         self.klok = QTimer(self)
@@ -183,43 +161,22 @@ class PhoneApp(QWidget):
         self.label.setText("Aan het bellen. \nDuur van het gesprek: \n"+ waarde)
 
 
-    def call_number(self,event= None):
-        number = self.nummerlabel.text()
-        if number:
-            if number.startswith('0'):
-                # Replace the '0' with '+32'
-                number = '+32' + number[1:]
-                print("International format:", number)
-                # Handle the response as needed
-                print("Start Gesprek naar:", number)
-                try:
-                    ser.write(('ATD' + number + ';\r\n').encode())  # Encode the string before writing
-                    response = ser.read(100)  # Read response from the module
-                    if response:
-                        response = response.decode(encoding='latin-1')
-                        print('reactie: ',response)
-                        self.startklok()
-                        
-                    else:
-                        print("No response received from the device.")
-                except serial.serialutil.SerialException as e:
-                    print("Serial communication error:", e)
-            else:
-                # Number doesn't start with '0', it may already be in international format
-                print("Nummer is niet geldig: ", number)
+    def call_number(self, event=None):
+            number = self.nummerlabel.text()
+            if number:
+                if number.startswith('0'):
+                    number = '+32' + number[1:]
+                    try:
+                        subprocess.run(["adb", "-s", device_ip , "shell", "am", "start", "-a", "android.intent.action.CALL", "-d", f"tel:{number}"])
+                    except Exception as e:
+                        print(f"error: {e}")
+                else:
+                    print(f"Nummer is niet geldig: {number}")
 
     def end_call(self, event=None):
-        print("Call denied.")
-        ser.write(b'ATH\r\n') 
-        # Close serial port
-        ser.close()
-        # End the current script
+        subprocess.run(["adb",  "-s", device_ip , "shell", "input", "keyevent", "KEYCODE_ENDCALL"])
         sys.exit()
   
-
-   
-
-
 def main():
     app = QApplication(sys.argv)
     phone_app = PhoneApp()

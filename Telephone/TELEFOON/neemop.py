@@ -9,7 +9,6 @@ from PyQt6.QtGui import QPixmap, QFont
 from PIL.ImageQt import ImageQt
 from PIL import Image
 import subprocess
-import serial
 import os
 import psutil
 import time
@@ -24,11 +23,20 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from google.auth.exceptions import RefreshError
 import pygame
+import configparser
 
-
+pygame.init()
 user_home = os.path.expanduser("~")
 global vastsysteem_path
 vastsysteem_path = os.path.join(user_home, "VASTSYSTEEM")
+
+config = configparser.ConfigParser()
+config.read(vastsysteem_path + '/settings.ini')
+
+device_ip = config.get('Settings', 'smartip')
+
+
+tokenpath = os.path.join(vastsysteem_path, "UsefullPrograms", "googleAI", "secrets" )
 AIaudio_path = os.path.join(vastsysteem_path+"/Telephone/TELEFOON/ring.mp3")
 
 config = configparser.ConfigParser()
@@ -44,15 +52,6 @@ font_size = int(config.get('Settings', 'font_size'))
 bgcolor = ("background-color: " + config.get('Settings', 'colorcode') + ";")
 
 
-
-port = '/dev/ttyUSB0'
-ser = serial.Serial(port, 9600, timeout=1)
-ser.write(b'AT\r\n')
-response = ser.read(100)  # Read response from the module
-response = response.decode()
-print('reactie: ', response)
-print(f"Monitoring {port} from neemop.py")
-pygame.init()
 
 bring = False
 
@@ -74,7 +73,7 @@ class MainWindow(QMainWindow):
             telnr = telnr[1:]
         print("Te controleren: ", telnr)
         print("Lijst: ", self.contacts)
-    
+
         super().__init__()
         self.setWindowTitle("Opneemscherm")
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
@@ -222,7 +221,7 @@ class MainWindow(QMainWindow):
                 creds.refresh(Request())
             except RefreshError:
                 flow = InstalledAppFlow.from_client_secrets_file(
-                    'credentials.json',
+                    tokenpath +'/client_secret.json',
                     ['https://www.googleapis.com/auth/contacts.readonly']
                 )
                 creds = flow.run_local_server(port=0)
@@ -231,7 +230,7 @@ class MainWindow(QMainWindow):
         
         if not creds:
             flow = InstalledAppFlow.from_client_secrets_file(
-                'credentials.json',
+                tokenpath +'/client_secret.json',
                 ['https://www.googleapis.com/auth/contacts.readonly']
             )
             creds = flow.run_local_server(port=0)
@@ -281,50 +280,32 @@ class MainWindow(QMainWindow):
     def check_serial_data(self):
         global bring
         if bring == False:
-            data = ser.readline().decode().strip()
-            print("Ontvangen:", data)
+            callstate = subprocess.Popen(["adb","-s",device_ip, "shell", "dumpsys", "telephony.registry", "|", "grep", "mCallState"], stdout=subprocess.PIPE,universal_newlines=True)
+            for line in callstate.stdout:
+                print(line)
             # Handle the received data as needed,
             # e.g., update a label in your GUI or trigger other actions
-           
-            if "+ESPEECH: 1,1,0" in data:
-                print("gesprek gestart. wacht op het gesprek om te stoppen")
-                pygame.mixer.music.stop()
-                self.timer.stop()
-                
-            elif "+ESPEECH: 0,1,0" in data:
-                print("Gesprek gestopt.\n vang de fake carrier op:")
-                data = ser.readline().decode().strip()
-                print("Ontvangen nix:", data)
-                data = ser.readline().decode().strip()
-                print("Fake carrier:", data)
-                print("Stuur ATH command om gesprek te sluiten")
-                ser.write(b'ATH\r\n')
-                data = ser.readline().decode().strip()
-                print("ontvangen: ", data )
-                bring = True
-                pygame.mixer.music.stop()
-                self.timer.stop()
-               
-            
-            elif "CARRIER" in data:
-                print("gemiste oproep van "+ str(sys.argv[1])+"\n")
-                self.telnr_label.setText("GEMIST GESPREK")
-                self.timerlabel.setText("Gemiste oproep van"+str(sys.argv[1])+"\nDruk op groen om terug te bellen.\nDruk op rood om deze melding te sluiten.")
-                bring = True
+                if "2" in line:
+                   print("gesprek gestart. wacht op het gesprek om te stoppen")
+                   pygame.mixer.music.stop()
+                 
+                elif "0" in line:
+                    print("gesprek gestopt")
+                    self.timer.stop()
+                    self.timerlabel.setText("Gesprek gestopt.")
+                    self.timerlabel.hide()
+                    self.telnr_label.setText("GEMISTE OPROEP")
+                    pygame.mixer.music.stop()
+                    self.takecall_btn.mousePressEvent = self.redail
+                    
 
-                #opneemknop veranderen nr een bel terug knop met atd funcit met het nummer die gemist is
-                #rode knop veranderen naar een "Niet erg" knop die opneem.py sluit en een nieuwe serialreader.py start
-                self.takecall_btn.mousePressEvent = self.redail
-                self.cancelcall_btn.mousePressEvent = self.sluitaf
-                pygame.mixer.music.stop()
-                self.timer.stop()
                 
                 
               
         elif bring == True:
             self.timer.stop()
             print("Bring is waar; nieuwe calls kunnen ontvangen worden")
-            ser.close()
+     
             time.sleep(0.5)
             
             if not self.check_process_running("serialreader.py"):
@@ -336,44 +317,22 @@ class MainWindow(QMainWindow):
         sys.exit()
 
     def redail(self, event=None):
-        global port
-        #herstart de serial communicatie
-        ser = serial.Serial(port, 9600, timeout=1)
-        ser.write(b'AT\r\n')
-        data = ser.readline().decode().strip()
-        print("Terug? ", data)
-        #cancelBTN back to cancelcall
+       #cancelBTN back to cancelcall
         self.cancelcall_btn.mousePressEvent = self.cancelcall
         self.startklok()
         
-        print("herbel het nummer ", sys.argv[1])
-        number = "+"+str(sys.argv[1])
-        if number:
-            if number.startswith('0'):
-                # Replace the '0' with '+32'
-                number = '+32' + number[1:]
-                print("International format:", number)
-                # Handle the response as needed
-            elif number.startswith('+32'):
-                print("Belgisch nummer. Toegelaten!")
-                print("Start Gesprek naar:", number)
-                try:
-                    ser.write(('ATD' + number + ';\r\n').encode())  # Encode the string before writing
-                    response = ser.read(100)  # Read response from the module
-                    if response:
-                        response = response.decode(encoding='latin-1')
-                        print('reactie: ',response)
-                    else:
-                        print("No response received from the device.")
-                except serial.serialutil.SerialException as e:
-                    print("Serial communication error:", e)
-            else:
-                # Number doesn't start with '0', it may already be in international format
-                print("Number is niet geldig.")
+        print("herbel het nummer", sys.argv[1])
+        number = str(sys.argv[1])
+       
+        callback="adb -s "+ device_ip+ " shell am start -a android.intent.action.CALL -d tel:"+number
+        subprocess.Popen([callback], shell=True)
+        self.telnr_label.setText(number)
+        self.timer_value = QTime(0, 0)
+        self.timerlabel.show()
 
     def takecall(self, event=None):
         print("Taking the call...")
-        ser.write(b'ATA\r\n')
+        subprocess.run(["adb", "-s", device_ip, "shell","input","keyevent","KEYCODE_CALL"])
         self.startklok()
     
     def startklok(self):
@@ -394,13 +353,10 @@ class MainWindow(QMainWindow):
     def cancelcall(self, event=None):
         global port
         #herstart de serial communicatie
-        ser = serial.Serial(port, 9600, timeout=1)
+        #ser = serial.Serial(port, 9600, timeout=1)
         print("Call denied.")
-        ser.write(b'ATH\r\n')
-        # Close serial port
-        print("closing serial on neemop")
-        ser.close()
-
+        subprocess.run(["adb", "-s", device_ip, "shell", "input", "keyevent", "KEYCODE_ENDCALL"])
+      
         # Check if serialreader.py is already running
         if not self.check_process_running("serialreader.py"):
             subprocess.Popen(["python3", os.path.join(vastsysteem_path + "/Telephone/TELEFOON/serialreader.py")])
@@ -415,9 +371,6 @@ class MainWindow(QMainWindow):
             if process.info['name'] == process_name:
                 return True
         return False
-        
-       
-
 
 def main():
     if len(sys.argv) != 2:

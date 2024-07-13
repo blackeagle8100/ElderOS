@@ -1,54 +1,80 @@
 #!/usr/bin/env python3
 
-import serial
 import subprocess
 import re
 import sys
 import time
 import os
+import configparser
+
+
+config = configparser.ConfigParser()
 
 user_home = os.path.expanduser("~")
-global vastsysteem_path
 vastsysteem_path = os.path.join(user_home, "VASTSYSTEEM")
 
-def monitor_serial_port(port='/dev/ttyUSB0', baudrate=9600):
+
+config.read(vastsysteem_path + '/settings.ini')
+device_ip = config.get('Settings', 'smartip')
+print(device_ip)
+
+def processcheck(process):
     try:
-        ser = serial.Serial(port, baudrate)
-        print(f"Monitoring {port}... from serialreader.py")
+        # Run the shell command to check for the process
+        result = subprocess.run(['ps', 'aux'], stdout=subprocess.PIPE, text=True)
+        # Filter the result to check for the process name
+        if process in result.stdout:
+            print(f"{process} is running")
+            return True
+        else:
+            print(f"{process} is not running")
+            return False
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return False
+
+def monitor_serial_port():
+    try:
+        # Run the shell command to check for the process
+        result = subprocess.run(['adb', 'devices'], stdout=subprocess.PIPE, text=True)
+        # Filter the result to check for the process name
+        if device_ip in result.stdout:
+            print("ADB is started")
+        else:
+            print("ADB is not running")
+            print("Check if adb is running on the watch")
+            result = subprocess.run(['adb', 'connect', device_ip], stdout=subprocess.PIPE, text=True)
+            print(result)
+            if "connected" in result.stdout:
+                print("ADB connected to the device")
+            else:
+                subprocess.run(['adb', 'connect', device_ip])
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+    try:
+        print("Monitoring")
+
         while True:
-            if ser.in_waiting > 0:
-                data = ser.readline().decode().strip()
-                print("Received:", data)
-                if "RING" in data:
-                    print("Ring ontdekt in data")
-                    data = ser.readline().decode().strip()
-                    #print("Gebelde data 1:", data)
-                    data = ser.readline().decode().strip()
-                    print("Closing serialreader")
-                    ser.close()
-                    #print("Gebelde data 2:", data)
-                    split =data.split(",")
-                    telnr= split[0]
-                    split = telnr.split(' ')
-                    telnr= split[1]
-                    telnr = telnr.replace('"', "")
-                    telnr = telnr.replace(' ', "")
-                    #telnr = re.sub(r'\D', '', telnr)
-                    print("TEL:",telnr)
-                    subprocess.Popen(["python3",vastsysteem_path +"/Telephone/TELEFOON/neemop.py", telnr])
-                    print("Exit serialReader")
-                    sys.exit()
-                elif '+BTDISCONN' in data:
-                    print("bluetooth disconnected; try connecting again")
-                    ser.write(b'AT+BTCONNECT=1,5\r\n')
-            time.sleep(0.1) #korte time.sleep nodig want anders draait de controle te snel ==> te veel cpu verbruik voor nix
- 
-    except serial.SerialException as e:
+            callstate = subprocess.Popen(["adb", "-s", device_ip, "shell", "dumpsys", "telephony.registry"], stdout=subprocess.PIPE, universal_newlines=True)
+            for line in callstate.stdout:
+                if "mCallState" in line:
+                    callstate_value = line.split("=")[1].strip()
+                    if callstate_value == "1":
+                        print("Call received")
+                        number_process = subprocess.Popen(["adb", "-s", device_ip, "shell", "dumpsys", "telephony.registry"], stdout=subprocess.PIPE, universal_newlines=True)
+                        for num_line in number_process.stdout:
+                            if "mCallIncomingNumber" in num_line:
+                                nummer = num_line.split("=")[1].strip()
+                                print("Incoming call from:", nummer)
+                                subprocess.Popen(["python3", vastsysteem_path+ "/Telephone/TELEFOON/neemop.py", nummer])
+                                sys.exit()
+            time.sleep(1) # Short time.sleep to reduce CPU usage
+    except Exception as e:
         print("Error:", e)
-        print("Iets ging mis sluit dit process en start serialreader opnieuw")
-        ser.close()
-        time.sleep(0.5)
-        subprocess.Popen(["python3", vastsysteem_path+"/Telephone/TELEFOON/serialreader.py"])
+        print("Something went wrong, closing this process and restarting serialreader")
+        time.sleep(1)
+        subprocess.Popen(["python3", vastsysteem_path+ "/Telephone/TELEFOON/serialreader.py"])
         sys.exit()
 
 if __name__ == "__main__":

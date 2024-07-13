@@ -1,24 +1,17 @@
 #!/usr/bin/env python3
 
-
 from PyQt6.QtWidgets import (QApplication,QWidget,QVBoxLayout,
                               QListWidget, QLabel, QHBoxLayout, 
                               QGridLayout, QPushButton, QListWidgetItem, QScrollArea)
 from PyQt6.QtGui import QPixmap, QFont, QImage
 from PyQt6.QtCore import Qt, QTime, QTimer
-
-
-
-
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-
 from google.auth.exceptions import RefreshError
 import time
 import subprocess
-import serial
 import re
 import psutil
 import configparser
@@ -34,6 +27,7 @@ user_home = os.path.expanduser("~")
 global vastsysteem_path
 global imagesize
 imagesize = 300
+
 vastsysteem_path = os.path.join(user_home, "VASTSYSTEEM")
 
 config = configparser.ConfigParser()
@@ -45,18 +39,9 @@ screen_width = int(config.get('Settings', 'screen_width'))
 screen_height = int(config.get('Settings', 'screen_height'))
 font_type = config.get('Settings', 'font_type')
 font_size = int(config.get('Settings', 'font_size'))
-
+device_ip =  config.get('Settings', 'smartip')
 bgcolor = ("background-color: " + config.get('Settings', 'colorcode') + ";")
 
-
-
-
-port = '/dev/ttyUSB0'
-ser = serial.Serial(port, 9600, timeout=1)
-ser.write(b'AT\r\n')
-response = ser.read(2000)  # Read response from the module
-response = response.decode()
-print('reactie: ', response)
 bring = False
 
 class GoogleContactsWidget(QWidget):
@@ -83,9 +68,6 @@ class GoogleContactsWidget(QWidget):
         # Check if credentials are expired
         if creds and creds.expired:
             print("iets mis")
-        
-        
-        
         return creds
 
 
@@ -113,14 +95,8 @@ class GoogleContactsWidget(QWidget):
                     contacts.append((name, phone, photo_url))
                 else:
                     contacts.append((name, phone, None))
-     
         return contacts
     
-    
- 
-
-
-
     def startreading(self, event=None):
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.check_serial_data)
@@ -184,49 +160,29 @@ class GoogleContactsWidget(QWidget):
             print("naam: ", naam)
             data = split[1]
             nummer = data.replace(" ", "")
-            nummer = data.replace("/", "")
+            nummer = nummer.replace("/", "")
             print("Nummer: ", nummer)
             # Further processing with the selected contact data
             print("Start het gesprek")
-            
             try:
-                ser.write(('ATD' + nummer + ';\r\n').encode())  # Encode the string before writing
-                response = ser.read(100)  # Read response from the module
-                if response:
-                    response = response.decode(encoding='latin-1')
-                    print('reactie: ',response)
-                    self.timerlabel.setText("Gesprek wordt gestart.")
-                    print("Gesprek gestart, sluit serialmonitor")
-                    script_path = vastsysteem_path + "/Telephone/TELEFOON/serialreader.py"
-                    self.kill_script_by_path(script_path)
-                    print("Start serial reading from telboek")
-                    global bring
-                    bring = False
-                    print("Bring: ", str(bring))
-                    self.startreading()
-                else:
-                    print("No response received from the device.")
-            except serial.serialutil.SerialException as e:
-                    print("Serial communication error:", e)
-                    self.timerlabel.setText("Error, check com")
+                print("try call")
+                subprocess.run(["adb", "-s", device_ip, "shell", "am", "start", "-a", "android.intent.action.CALL", "-d", "tel:"+nummer])
+                self.startklok()
+            except Exception as e:
+                print("error "+e)
         else:
             print("Geen contactpersoon geselecteerd.")
             self.timerlabel.setText("Selecteer eerst naar wie je wilt bellen.")
-       
-
     def cancelcall(self, event=None):
-        print("Call denied.")
-        ser.write(b'ATH\r\n')
-        # Close serial port
-        ser.close()
+        print("Stop call")
+        subprocess.run(["adb", "-s", device_ip, "shell", "input", "keyevent", "KEYCODE_ENDCALL"])
         try:
-             script_path = vastsysteem_path+"/Telephone/TELEFOON/serialreader.py"
+             script_path = vastsysteem_path+"/TELEFOON/serialreader.py"
              self.kill_script_by_path(script_path)
         except:
             print("serialreader was niet aan het draaien")
         # Start a new terminal with serialreader.py
-        subprocess.Popen(["python3", vastsysteem_path+"/Telephone/TELEFOON/serialreader.py"])
-        
+        subprocess.Popen(["python3", vastsysteem_path+"/TELEFOON/serialreader.py"])
         # End the current script
         sys.exit()
 
