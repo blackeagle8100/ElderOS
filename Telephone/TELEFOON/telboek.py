@@ -177,12 +177,12 @@ class GoogleContactsWidget(QWidget):
         print("Stop call")
         subprocess.run(["adb", "-s", device_ip, "shell", "input", "keyevent", "KEYCODE_ENDCALL"])
         try:
-             script_path = vastsysteem_path+"/TELEFOON/serialreader.py"
+             script_path = vastsysteem_path+"/Telephone/TELEFOON/serialreader.py"
              self.kill_script_by_path(script_path)
         except:
             print("serialreader was niet aan het draaien")
         # Start a new terminal with serialreader.py
-        subprocess.Popen(["python3", vastsysteem_path+"/TELEFOON/serialreader.py"])
+        subprocess.Popen(["python3", vastsysteem_path+"/Telephone/TELEFOON/serialreader.py"])
         # End the current script
         sys.exit()
 
