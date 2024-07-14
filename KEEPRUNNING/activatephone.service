@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/meme/VASTSYSTEEM/Telephone/TELEFOON/activatephone.py
+ExecStart=~/VASTSYSTEEM/Telephone/TELEFOON/activatephone.py
 Restart=always
 RestartSec=10
 
