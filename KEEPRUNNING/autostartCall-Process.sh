@@ -13,6 +13,13 @@ cordbot() {
     ./cordbot.py
 }
 
+phone() {
+    cd ~/VASTSYSTEEM/Telephone/TELEFOON
+    ./activatephone.py
+    ./watcher.py
+    ./battchecker.py
+}
+
 vastsysteem-call &
 cordenhance
 
