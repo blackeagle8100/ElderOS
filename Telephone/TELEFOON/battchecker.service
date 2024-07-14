@@ -4,7 +4,9 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/meme/VASTSYSTEEM/Telephone/TELEFOON/activatephone.py
+ExecStart=/home/meme/VASTSYSTEEM/Telephone/TELEFOON/battchecker.py
+Restart=always
+RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
