@@ -22,6 +22,7 @@ phone() {
 
 vastsysteem-call &
 cordenhance
+phone
 
 sleep 20
 wmctrl -a MAIN
