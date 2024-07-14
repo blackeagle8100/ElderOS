@@ -60,7 +60,9 @@ if adb_result == False:
             time.sleep(1)
         subprocess.Popen(["python3",user_home +"/VASTSYSTEEM/Telephone/TELEFOON/serialreader.py"])
         subprocess.Popen(["python3",user_home +"/VASTSYSTEEM/Telephone/TELEFOON/battchecker.py"])
+        subprocess.Popen(["python3",user_home +"/VASTSYSTEEM/Telephone/TELEFOON/watcher.py"])
 else:           
      print("alles ok ")
      subprocess.Popen(["python3",user_home +"/VASTSYSTEEM/Telephone/TELEFOON/serialreader.py"])
      subprocess.Popen(["python3",user_home +"/VASTSYSTEEM/Telephone/TELEFOON/battchecker.py"])
+     subprocess.Popen(["python3",user_home +"/VASTSYSTEEM/Telephone/TELEFOON/watcher.py"])
