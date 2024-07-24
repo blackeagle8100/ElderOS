@@ -161,30 +161,30 @@ class MainWindow(QMainWindow):
         
         #self.labelUitvoeren.setEnabled(False)
         if self.uitvoer == 'Instellingen':
-            subprocess.Popen(["python3", "LOADING.py", "1"])
-            subprocess.Popen(["python3", "FULLSETTINGS.py", "5"])
+            subprocess.Popen(["python3", vastsysteem_path + "/LOADING.py", "1"])
+            subprocess.Popen(["python3", vastsysteem_path + "/FULLSETTINGS.py", "5"])
             self.url = "https://www.facebook.com"
             
         elif self.uitvoer == 'Facebook':
-            subprocess.Popen(["python3", "LOADING.py", "5"])
+            subprocess.Popen(["python3", vastsysteem_path +"/LOADING.py", "5"])
             self.url = "https://www.facebook.com"
-            subprocess.Popen(["python3", "./Facebook/Facebook.py", str(self.url), str(self.uitvoer)])
+            subprocess.Popen(["python3", vastsysteem_path +"/Facebook/Facebook.py", str(self.url), str(self.uitvoer)])
             
         elif self.uitvoer == 'Youtube':
-            subprocess.Popen(["python3", "LOADING.py", "5"])
+            subprocess.Popen(["python3", vastsysteem_path +"/LOADING.py", "5"])
             self.url = "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dnl%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=nl&ec=65620"
-            subprocess.Popen(["python3", "ExternBrowser.py", str(self.url), str(self.uitvoer)])
+            subprocess.Popen(["python3", vastsysteem_path + "ExternBrowser.py", str(self.url), str(self.uitvoer)])
             
         elif self.uitvoer == 'Telefoon':
-            subprocess.Popen(["python3", "LOADING.py", "2"])
+            subprocess.Popen(["python3", vastsysteem_path + "/LOADING.py", "2"])
             self.openmessenger()
             
         elif self.uitvoer == "Manillen":
-            subprocess.Popen(["python3", "LOADING.py", "3"])
+            subprocess.Popen(["python3", vastsysteem_path + "/LOADING.py", "3"])
             self.openManillen()
             
         elif self.uitvoer == 'Galerij':
-            subprocess.Popen(["python3", "LOADING.py", "3"])
+            subprocess.Popen(["python3", vastsysteem_path+ "/LOADING.py", "3"])
             self.openGallery()
             print("Foto's")
             
@@ -197,16 +197,16 @@ class MainWindow(QMainWindow):
             
         elif self.uitvoer == 'TVFM':    
             print('TV')
-            subprocess.Popen(["python3", "./TV/TV.py"])
+            subprocess.Popen(["python3", vastsysteem_path + "/TV/TV.py"])
         elif self.uitvoer == 'Weer':    
             print('Weer')
-            subprocess.Popen(["python3", "./WEER/weer.py"])
+            subprocess.Popen(["python3", vastsysteem_path +"/WEER/weer.py"])
         elif self.uitvoer == 'Internet':    
-            subprocess.Popen(["python3", "InternetMenu.py"])
+            subprocess.Popen(["python3", vastsysteem_path +"/InternetMenu.py"])
         elif self.uitvoer == 'Games':    
-            subprocess.Popen(["python3", "GamesMenu.py"])
+            subprocess.Popen(["python3", vastsysteem_path + "/GamesMenu.py"])
         elif self.uitvoer == "Help":
-            subprocess.Popen(["python3","./helptest.py"])
+            subprocess.Popen(["python3", vastsysteem_path +"/helptest.py"])
         elif self.uitvoer == "Wekker":
             print(("Open de wekker"))
             sound_path = (AIaudio_path + "unavailable.wav")
@@ -265,17 +265,17 @@ class MainWindow(QMainWindow):
         self.labelKlok.setText(formatted_datetime)
         
     def openManillen(self):
-        subprocess.Popen(['python3','./Games/Manillen.py'])
+        subprocess.Popen(['python3', vastsysteem_path +'/Games/Manillen.py'])
     def openPatience(self):
-        subprocess.Popen(['python3','./Games/Patience.py'])
+        subprocess.Popen(['python3', vastsysteem_path +'/Games/Patience.py'])
     def openmessenger(self):
-        subprocess.Popen(['python3','./Telephone/MAINphone.py'])
+        subprocess.Popen(['python3',vastsysteem_path +'/Telephone/MAINphone.py'])
     def openGallery(self):
-        subprocess.Popen(['python3', './Gallery/gallery.py'])
+        subprocess.Popen(['python3',  vastsysteem_path +'/Gallery/gallery.py'])
     def openSpeler(self):
-        subprocess.Popen(['python3', './MediaPlayer/Mediaplayer.py']) 
+        subprocess.Popen(['python3', vastsysteem_path + '/MediaPlayer/Mediaplayer.py']) 
     def openSettings(self):
-        subprocess.Popen(['python3', './settingsGUICOMPLETE.py']) 
+        subprocess.Popen(['python3', vastsysteem_path + '/settingsGUICOMPLETE.py']) 
         
 if __name__ == "__main__":
     app = QApplication(sys.argv)
