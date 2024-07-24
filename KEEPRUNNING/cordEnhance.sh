@@ -4,7 +4,6 @@
 decrypt_password() {
     # Call the Python script to decrypt the password
     decrypted_password=$(python3 ~/VASTSYSTEEM/dencrypt.py decrypt "$1")
-    echo "$decrypted_password"
 }
 
 
@@ -12,7 +11,6 @@ decrypt_password() {
 password=$(cat ~/VASTSYSTEEM/S)
 
 decpswd=$(decrypt_password "$password")
-echo $decpswd
 
 
 version=$(ls -d ~/.config/discord/*/ | head -n1 | grep -oP 'discord/\K[\d.]+')
