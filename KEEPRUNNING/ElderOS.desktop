@@ -3,6 +3,6 @@ Type=Application
 Name=ElderOS
 GenericName=ElderOS
 X-GNOME-FullName=ElderOS
-Exec=/home/meme/VASTSYSTEEM/KEEPRUNNING/autostartCall-Process.sh
+Exec=/home/meme/VASTSYSTEEM/autostartup.sh
 Terminal=false
 Categories=Network;
