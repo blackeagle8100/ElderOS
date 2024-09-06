@@ -82,14 +82,14 @@ while true; do
         echo -e "\nSudo password is correct."
         for prog in "${notInst[@]}"; do
             echo "Installing $prog"
-            echo "$sudo_password" | sudo -S "apt install $prog -y"
+            echo "$sudo_password" | sudo -S apt install $prog -y
         done
         for pip in "${pips[@]}"; do
             check_pip "$pip"
         done
         for app in "${notpip[@]}"; do
             echo "Installing $app"
-            echo "$sudo_password" | sudo -S "apt install python3-$app -y"
+            echo "$sudo_password" | sudo -S apt install python3-$app -y
         done
         encrypted_password=$(encrypt_password "$sudo_password")
         touch S
@@ -212,7 +212,7 @@ extensionsInstall(){
             firefox extensions.gnome.org
             wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/Downloads/chrome.deb
             cd ~/Downloads
-            echo "$sudo_password" | sudo -S "apt install ./chrome.deb -y"
+            echo "$sudo_password" | sudo -S apt install ./chrome.deb -y
             echo "Press Enter to continue"
             read -r
             menu
