@@ -231,5 +231,8 @@ extensionsInstall(){
 menu
 cp ~/VASTSYSTEEM/KEEPRUNNING/ElderOS.desktop ~/.config/autostart/
 packagesInstall
+wget https://discordapp.com/api/download?platform=linux -O ~/Downloads/discord.deb
+cd ~/Downloads
+echo "$sudo_password" | sudo -S apt install ./discord.deb -y
 ~/VASTSYSTEEM/UsefullPrograms/seleniumdriverdownloader.sh
 ~/VASTSYSTEEM/KEEPRUNNING/update-reboot-setup.sh
