@@ -7,7 +7,7 @@ decrypt_password() {
     echo "$decrypted_password"
 }
 path=$(pwd)
-sed -i "s|ExecStart=~/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh|ExecStart=${home_directory}/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh|" "VASTSYSTEEM/KEEPRUNNING/update-reboot.service"
+sed -i "s|ExecStart=~/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh|ExecStart=${home_directory}/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh|" "~/VASTSYSTEEM/KEEPRUNNING/update-reboot.service"
 
 password=$(cat ~/VASTSYSTEEM/S)
 decpswd=$(decrypt_password "$password")
