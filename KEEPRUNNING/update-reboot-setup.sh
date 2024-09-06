@@ -12,8 +12,8 @@ sed -i "s|ExecStart=~/VASTSYSTEEM/KEEPRUNNING/update-reboot.sh|ExecStart=${home_
 password=$(cat ~/VASTSYSTEEM/S)
 decpswd=$(decrypt_password "$password")
 echo "Copying necessary update-reboot files..."
-echo "$decpswd" | sudo -S cp VASTSYSTEEM/KEEPRUNNING/update-reboot.service /etc/systemd/system
-echo "$decpswd" | sudo -S cp VASTSYSTEEM/KEEPRUNNING/update-reboot.timer /etc/systemd/system
+echo "$decpswd" | sudo -S cp ~/VASTSYSTEEM/KEEPRUNNING/update-reboot.service /etc/systemd/system
+echo "$decpswd" | sudo -S cp ~/VASTSYSTEEM/KEEPRUNNING/update-reboot.timer /etc/systemd/system
 echo "Activating timer"
 echo "$decpswd" | sudo -S systemctl daemon-reload
 echo "$decpswd" | sudo -S systemctl enable update-reboot.timer
