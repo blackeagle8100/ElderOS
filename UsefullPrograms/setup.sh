@@ -26,7 +26,7 @@ directory="$HOME/.config/autostart"
 programs=("curl" "wget" "git" "python3" "jq" "xdotool" "scrot" "wmctrl" "kate" "blinken" "htop" "sol")
 notInst=()
 
-pips=("tenacity" "cryptography" "pygame" "opencv" "pip" "mutagen" "selenium" "pyqt6" "pyqt6.qtwebengine" "pyqt6.qtmultimedia" "google-auth" "google-auth-oauthlib" "click" "tk" "pil" "grpc-tools")
+pips=("tenacity" "cryptography" "pygame" "opencv" "pip" "mutagen" "selenium" "pyqt6" "pyqt6.qtwebengine" "pyqt6.qtmultimedia" "google-auth" "google-auth-oauthlib" "click" "tk" "pil" "python3-pil.imagetk" "grpc-tools")
 notpip=()
 
 if [ -d "$directory" ]; then
