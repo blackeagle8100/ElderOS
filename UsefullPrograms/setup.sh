@@ -16,7 +16,7 @@ decrypt_password() {
 
 # Function to check sudo password
 check_sudo_password() {
-    if echo "$sudo_password" | su -c true >/dev/null 2>&1; then
+    if echo "$sudo_password" | sudo -S true >/dev/null 2>&1; then
         return 0  # Password is correct
     else
         return 1  # Password is incorrect
@@ -82,14 +82,14 @@ while true; do
         echo -e "\nSu password is correct."
         for prog in "${notInst[@]}"; do
             echo "Installing $prog"
-            echo "$sudo_password" | su -c "apt install $prog -y"
+            echo "$sudo_password" | sudo -S "apt install $prog -y"
         done
         for pip in "${pips[@]}"; do
             check_pip "$pip"
         done
         for app in "${notpip[@]}"; do
             echo "Installing $app"
-            echo "$sudo_password" | su -c "apt install python3-$app -y"
+            echo "$sudo_password" | sudo -S "apt install python3-$app -y"
         done
         encrypted_password=$(encrypt_password "$sudo_password")
         touch S
@@ -182,7 +182,7 @@ packagesInstall(){
         valid_input
         if [[ $choice == 1 ]]; then
             echo "Installing packages."
-            pip install pytube pyautogui moviepy google-assistant-grpc sounddevice --break-system-packages
+            pip install pytube pyautogui moviepy google-assistant-grpc sounddevice
             menu
             extensionsInstall
         elif [[ $choice == 2 ]]; then
