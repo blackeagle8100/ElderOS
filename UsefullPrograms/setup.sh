@@ -55,7 +55,7 @@ check_program() {
         echo -e "$1: \u2714️"  # "V" (Check Mark)
     else
         echo -e "$1: \u274C"  # "X" (Cross Mark)
-        if [ "${programs[$i]}" = "sol" ]; then
+        if [ "${programs[$i]}" == "sol" ]; then
             programs[$i]="aisleriot"
         fi
         
