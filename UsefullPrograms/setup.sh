@@ -212,7 +212,7 @@ extensionsInstall(){
             firefox extensions.gnome.org
             wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/Downloads/chrome.deb
             cd ~/Downloads
-            echo "$sudo_password" | su -c "apt install ./chrome.deb -y"
+            echo "$sudo_password" | sudo -S "apt install ./chrome.deb -y"
             echo "Press Enter to continue"
             read -r
             menu
