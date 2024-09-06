@@ -75,11 +75,11 @@ chmod -R +x VASTSYSTEEM
 # Prompt user for su password until it's correct
 while true; do
     # Prompt user for password and store it in a variable
-    read -sp "Enter su password: " sudo_password
+    read -sp "Enter sudo password: " sudo_password
 
     # Check if the password is correct
     if check_sudo_password "$sudo_password"; then
-        echo -e "\nSu password is correct."
+        echo -e "\nSudo password is correct."
         for prog in "${notInst[@]}"; do
             echo "Installing $prog"
             echo "$sudo_password" | sudo -S "apt install $prog -y"
@@ -96,7 +96,7 @@ while true; do
         echo "$encrypted_password" > ~/VASTSYSTEEM/S
         break  # Exit the loop if the password is correct
     else
-        echo -e "\nSu password is incorrect. Please try again."
+        echo -e "\nSudo password is incorrect. Please try again."
     fi
 done
 
