@@ -182,7 +182,7 @@ packagesInstall(){
         valid_input
         if [[ $choice == 1 ]]; then
             echo "Installing packages."
-            pip install pytube pyautogui moviepy google-assistant-grpc sounddevice --break-system-packages
+            pip install pytube pyautogui moviepy google-assistant-grpc sounddevice google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2
             menu
             extensionsInstall
         elif [[ $choice == 2 ]]; then
