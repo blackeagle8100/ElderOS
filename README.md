@@ -31,7 +31,7 @@ De open-source onderdelen van ElderOS omvatten:
 - Fullscreen-apps voor:
   - Facebook
   - YouTube
-  - Gmail
+  - Mail
   - Muziek
   - TV/streaming
   - Weer
