@@ -35,8 +35,6 @@ De open-source onderdelen van ElderOS omvatten:
   - Muziek
   - TV/streaming
   - Weer
-  - Kalender
-  - Wekker
   - Foto-galerij
   - Spelletjes
   - Internet (facebook en youtube)
