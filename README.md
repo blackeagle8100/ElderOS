@@ -38,9 +38,24 @@ De open-source onderdelen van ElderOS omvatten:
   - Kalender
   - Wekker
   - Foto-galerij
-- Instellingentools met grote, leesbare knoppen
+  - Spelletjes
+  - Internet (facebook en youtube)
+  - ADB smartwatch connectie (telefoon / telefoonboek)
+      
+- Instellingentools
 - Encryptiesysteem voor lokaal opslaan van dienst-wachtwoorden  
   (AES-256-encryptie met unieke sleutel per installatie)
 - Scripts die de interface vereenvoudigen en onnodige afleiding blokkeren
 
+en dit allemaal met een grote, leesbare interface!
+
 Dit alles bevindt zich als volledig open broncode in deze repository.
+
+rollout 
+V1 (if it works, don't touch it!)
+
+Volgende stop:
+- roll-out van de nieuwe digitale wekker en kalender
+- Verbeteren van de code, efficiënter maken, minder belastend voor u en uw pc!
+
+
