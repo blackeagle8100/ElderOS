@@ -12,6 +12,8 @@ ElderOS is een onderdeel van het **SWAT-project**
 open en begrijpbare technologie.
 
 ---
+<img src ="https://github.com/blackeagle8100/ElderOS/blob/main/2026-01-23_13-21-42.png">
+  
 
 ## 🎯 Doel van het project
 
