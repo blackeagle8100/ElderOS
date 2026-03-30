@@ -216,12 +216,7 @@ class WebDialog(QDialog):
         kb_button.clicked.connect(self.Keyboard)
         top_layout.addWidget(kb_button)
 
-        # DownloadKnop
-        self.download_button = QPushButton("Download", self)
-        self.download_button.setFont(QFont('Arial black', 30))
-        self.download_button.setFixedSize(200, 100)  # Set the size of the download button
-        self.download_button.clicked.connect(self.DownloadYoutube)
-        top_layout.addWidget(self.download_button)
+
 
         # Download Label
         self.lbldownload = QLabel("", self)
